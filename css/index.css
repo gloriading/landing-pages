@@ -10,7 +10,7 @@ html, body {
 
 main {
   min-height: 100%;
-  background-color: #4db6ac;
+  background-color: whitesmoke;
 }
 
 header {
@@ -26,8 +26,7 @@ header h1 {
 }
 
 section {
-   border: 1px black solid;
-   padding: 1em 2em;
+   padding: 1em 3em;
 }
 
 .coming-soon-links h2 {
@@ -42,13 +41,13 @@ section {
 .coming-soon-links p {
   font-size: 1.1em;
   font-family: helvetica, arial;
-  transition: 3s ease;
+  transition: 1s ease;
   border-radius: 10px;
   padding: 0.2em 1em;
 }
 
 .coming-soon-links p:hover {
-  background-color: whitesmoke;
+  background-color: RGB(255, 215, 0);
 }
 
 footer {
@@ -56,8 +55,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding-right: 2em;
-  background-color: transparent;
+  padding-right: 3em;
   text-align: right;
   font-family: arial;
 }
