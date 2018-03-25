@@ -3,6 +3,11 @@ html, body {
   padding: 0;
   height: 100%;
 }
+
+* > a {
+  text-decoration: none;
+}
+
 main {
   min-height: 100%;
   background-color: #4db6ac;
@@ -30,6 +35,10 @@ section {
   text-shadow: 0 0 3px white;
 }
 
+.coming-soon-links a {
+  color:inherit;
+}
+
 .coming-soon-links p {
   font-size: 1.1em;
   font-family: helvetica, arial;
@@ -55,7 +64,6 @@ footer {
 
 footer a {
   color:#004d40;
-  text-decoration: none;
   margin-left: 5px;
   font-size: 1.2em;
 }
