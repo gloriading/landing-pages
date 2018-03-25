@@ -36,6 +36,23 @@ div.main {
   text-align: justify;
 }
 
+#left a.backlink {
+  font-size: 0.9em;
+  color:inherit;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid white;
+  padding: 4px 6px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+#left a.backlink:hover {
+  color: black;
+  border: 1px solid black;
+}
+
 #left p {
   font-size: 1.2em;
   letter-spacing: 1px;
