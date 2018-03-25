@@ -5,7 +5,7 @@ html, body {
 }
 main {
   min-height: 100%;
-  background-color: #eeeeee;
+  background-color: #4db6ac;
 }
 
 header {
@@ -13,6 +13,7 @@ header {
  padding-top: 1em;
  font-family: sans-serif;
  letter-spacing: 2px;
+ text-shadow: 0 0 5px white;
 }
 
 header h1 {
@@ -21,6 +22,24 @@ header h1 {
 
 section {
    border: 1px black solid;
+   padding: 1em 2em;
+}
+
+.coming-soon-links h2 {
+  font-family: sans-serif;
+  text-shadow: 0 0 3px white;
+}
+
+.coming-soon-links p {
+  font-size: 1.1em;
+  font-family: helvetica, arial;
+  transition: 3s ease;
+  border-radius: 10px;
+  padding: 0.2em 1em;
+}
+
+.coming-soon-links p:hover {
+  background-color: whitesmoke;
 }
 
 footer {
@@ -34,7 +53,12 @@ footer {
   font-family: arial;
 }
 
-footer span {
+footer a {
+  color:#004d40;
+  text-decoration: none;
   margin-left: 5px;
   font-size: 1.2em;
+}
+footer a:hover {
+  color: #c62828;
 }
