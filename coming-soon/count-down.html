@@ -23,5 +23,33 @@
       </footer>
     </div>
 
+    <script>
+
+    const countDown = document.querySelector('#countDown');
+    const dDay = new Date("May 28, 2018 15:00:00").getTime();
+
+    function timeUpdate(){
+      let current = new Date().getTime();
+      let difference =  dDay - current;
+      let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      // countDown.innerHTML = days + " D " + hours + " H " + minutes + " M " + seconds + " S ";
+      countDown.innerHTML =
+      `<span class="numbers">${days}</span> D <span class="numbers">${hours}</span> H <span class="numbers">${minutes}</span> M <span class="numbers"> ${seconds}</span> S
+      `
+
+      if(difference == 0) {
+        countDown.innerHTML = "Here's the party time!";
+      }else if(difference <0) {
+        countDown.innerHTML = "Expired";
+      }
+    }
+    setInterval(timeUpdate, 1000);
+
+
+    </script>
   </body>
 </html>
