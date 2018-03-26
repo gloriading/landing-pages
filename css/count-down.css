@@ -53,11 +53,20 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
+  min-width: 400px;
   text-align: center;
   transform: translate(-50%, -50%);
 }
 
+section hr {
+  width: 80%;
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
 section h1 {
+  font-size: 2em;
   font-family: arial;
   text-transform: uppercase;
   letter-spacing: 5px;
