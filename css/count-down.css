@@ -1,0 +1,53 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  color: white;
+  height: 100%;
+  background-image: url('https://images.pexels.com/photos/687811/pexels-photo-687811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Courier;
+}
+
+nav h2 {
+  padding: 1.2em;
+  margin:0;
+}
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+section h1 {
+  font-family: arial;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+section p {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-family: Courier;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 2em;
+  font-family: Georgia;
+  letter-spacing: 1px;
+}
