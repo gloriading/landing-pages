@@ -4,6 +4,10 @@ body, html {
   padding: 0;
 }
 
+* > a {
+  text-decoration: none;
+}
+
 .main {
   color: white;
   height: 100%;
@@ -13,17 +17,38 @@ body, html {
   background-position: center;
   position: relative;
 }
+
 nav {
   position: absolute;
+  width: 100%;
   top: 0;
   right: 0;
   font-family: Courier;
+  text-align: right;
 }
 
 nav h2 {
   padding: 1.2em;
   margin:0;
 }
+
+a.backlink {
+  font-size: 0.9rem;
+  color: inherit;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid white;
+  padding: 4px 6px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+a.backlink:hover {
+  color: black;
+  border: 1px solid black;
+}
+
 section {
   position: absolute;
   top: 50%;
