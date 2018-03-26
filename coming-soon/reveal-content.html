@@ -5,10 +5,14 @@
     <title>reveal content | comming-soon</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/reveal.css">
-
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+    </script>
   </head>
-  <body>  
+  <body>
     <main>
+      <a class="backlink" href="../index.html"> back <i class="fas fa-angle-double-left"></i> </a>
       <div class="boxes">
         <div class="box">C</div>
         <div class="box">O</div>
@@ -22,17 +26,29 @@
         <div class="box">O</div>
         <div class="box">N</div>
       </div>
+      <div class="footer">
+        <h3>G+ Design</h3>
+      </div>
     </main>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
     <script>
-      window.sr = ScrollReveal();
+
       sr.reveal('.box', {
         duration: 3000,
         origin: 'bottom',
         distance: '100px',
         scale: 0.5,
-        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
+        delay: 500,
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+        afterReveal: function (domEl) {
+          sr.reveal('.footer',{
+            origin: 'left',
+            distance: '500px',
+            duration: 2000
+          })
+        },
       }, 50);
+
     </script>
   </body>
 </html>

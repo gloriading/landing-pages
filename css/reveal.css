@@ -7,10 +7,33 @@ html,body {
   justify-content: center;
 }
 
+* > a {
+  text-decoration: none;
+}
+
+a.backlink {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid white;
+  padding: 4px 6px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+a.backlink:hover {
+  color: black;
+  background-color: white;
+}
+
 main {
   height: 100%;
+  width: 100%;
   background-image: url('https://images.pexels.com/photos/573294/pexels-photo-573294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-size: 100vw auto;
+  background-size:cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -18,9 +41,10 @@ main {
 }
 
 .box {
+  /* Ensure elements load hidden before ScrollReveal runs */
+  visibility: hidden;
   width: 50px;
   height: 50px;
-  /* background-color: orange; */
   margin: 2px;
   text-align: center;
   font-size: 45px;
@@ -31,7 +55,21 @@ main {
 }
 
 .boxes {
-  border: 1px black solid;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0));
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 3em;
+  font-family: Helvetica, Arial;
+  font-weight: 200;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: yellow;
+  /* Ensure elements load hidden before ScrollReveal runs */
+  visibility: hidden;
 }
