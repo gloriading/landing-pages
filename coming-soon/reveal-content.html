@@ -49,5 +49,16 @@
         <div class="box">N</div>
       </div>
     </main>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.box', {
+        duration: 3000,
+        origin: 'bottom',
+        distance: '100px',
+        scale: 0.5,
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
+      }, 50);
+    </script>
   </body>
 </html>
