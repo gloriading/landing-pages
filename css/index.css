@@ -26,19 +26,26 @@ header h1 {
 }
 
 section {
-   padding: 1em 3em;
+   width: 50%;
+   max-height: 400px;
+   overflow: scroll;
+   transform: translateX(-50%);
+   margin-left: 50%;
+   padding: 1em 1em;
+   box-shadow: 0 0 5px gray inset;
+   border-radius: 10px;
 }
 
-.coming-soon-links h2 {
+.coming-soon-links h2 , .single-page-links h2 {
   font-family: sans-serif;
   text-shadow: 0 0 3px white;
 }
 
-.coming-soon-links a {
+.coming-soon-links a , .single-page-links a{
   color:inherit;
 }
 
-.coming-soon-links p {
+.coming-soon-links p , .single-page-links p{
   font-size: 1.1em;
   font-family: helvetica, arial;
   transition: 1s ease;
@@ -48,6 +55,10 @@ section {
 
 .coming-soon-links p:hover {
   background-color: RGB(255, 215, 0);
+}
+
+.single-page-links p:hover {
+  background-color: RGB(30, 144, 255);
 }
 
 footer {
