@@ -10,7 +10,10 @@ html, body {
 
 main {
   min-height: 100%;
-  background-color: whitesmoke;
+  background-color: rgba(245,245,245,0.6);
+  background-image: url('https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -26,6 +29,7 @@ header h1 {
 }
 
 section {
+   background-color: rgba(245,245,245,0.6);
    width: 50%;
    max-height: 400px;
    overflow: scroll;
