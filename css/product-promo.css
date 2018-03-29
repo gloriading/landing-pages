@@ -8,18 +8,62 @@ html, body {
 * { box-sizing: border-box; }
 a { text-decoration: none; }
 
-nav { border-bottom: 1px solid black; }
+nav .navbar-brand {
+  text-transform: uppercase;
+}
 
 header {
-  padding-top: 100px;
-  background-color: rgba(23, 32, 42, 0.8);
+  position: relative;
+  padding-top: 150px;
+  background-image: url('https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: center;
+  background-size: cover;
   height: 100vh;
-  text-align: center;
+}
+
+header hr {
+  margin: 30px auto 0px;
+  height: 3px;
+  width: 50px;
+  background-color: white;
+}
+
+.primaryMessage {
+  padding: 5px 180px;
+  border: 1px red solid;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .primaryMessage h1 {
-  font-size:
+  font-size: 45px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: white;
+}
+
+.secondaryMessage {
+  border: 1px blue solid;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.secondaryMessage p {
+  font-family: Georgia;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+a.btn-default {
+  margin-top: 30px;
+  color: white;
+  padding: 10px 30px !important;
+  letter-spacing: 1px;
+  font-size: 14px !important;
+  text-transform: uppercase;
+  background-color: rgba(178, 34, 34, 0.8);
+}
+
+a.btn-default:hover {
+  color: white;
+  background-color: rgba(178, 34, 34, 1);
 }
