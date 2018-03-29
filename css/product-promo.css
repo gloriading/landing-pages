@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* { box-sizing: border-box; }
+a { text-decoration: none; }
+
+nav { border-bottom: 1px solid black; }
+
+header {
+  padding-top: 100px;
+  background-color: rgba(23, 32, 42, 0.8);
+  height: 100vh;
+  text-align: center;
+}
+
+.primaryMessage h1 {
+  font-size:
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
