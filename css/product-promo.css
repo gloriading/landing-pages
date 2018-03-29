@@ -13,7 +13,6 @@ nav .navbar-brand {
 }
 
 header {
-  position: relative;
   padding-top: 150px;
   background-image: url('https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
@@ -21,7 +20,7 @@ header {
   height: 100vh;
 }
 
-header hr {
+header hr, #about hr {
   margin: 30px auto 0px;
   height: 3px;
   width: 50px;
@@ -30,7 +29,6 @@ header hr {
 
 .primaryMessage {
   padding: 5px 180px;
-  border: 1px red solid;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
@@ -42,11 +40,10 @@ header hr {
 }
 
 .secondaryMessage {
-  border: 1px blue solid;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-.secondaryMessage p {
+.secondaryMessage p, #about p {
   font-family: Georgia;
   font-size: 20px;
   letter-spacing: 1px;
@@ -66,4 +63,36 @@ header a.btn-default {
 header a.btn-default:hover {
   color: white;
   background-color: rgba(178, 34, 34, 1);
+}
+
+section#about {
+  padding-top: 150px;
+  background-color: RGB(100, 149, 237);
+  height: 100vh;
+}
+
+#about .section-heading {
+  font-size: 35px;
+  color: white;
+  text-shadow: -1px 1px 5px rgba(25, 25, 112, 1);
+  letter-spacing: 1px;
+}
+
+#about p {
+  color: white;
+}
+
+#about a.btn-default {
+  margin-top: 30px;
+  color: rgba(25, 25, 112, 1);
+  padding: 10px 30px !important;
+  letter-spacing: 1px;
+  font-size: 14px !important;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#about a.btn-default:hover {
+  color: rgba(25, 25, 112, 1);
+  background-color: white;
 }
