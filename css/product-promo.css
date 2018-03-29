@@ -67,24 +67,23 @@ header a.btn-default:hover {
 
 section#about {
   padding-top: 150px;
-  background-color: RGB(100, 149, 237);
+  background-color: RGB(255, 215, 0);
   height: 100vh;
 }
 
 #about .section-heading {
   font-size: 35px;
-  color: white;
-  text-shadow: -1px 1px 5px rgba(25, 25, 112, 1);
+  color: rgba(37, 37, 37, 1);
   letter-spacing: 1px;
 }
 
 #about p {
-  color: white;
+  color: rgba(37, 37, 37, 0.9);
 }
 
 #about a.btn-default {
   margin-top: 30px;
-  color: rgba(25, 25, 112, 1);
+  color: rgba(37, 37, 37, 1);
   padding: 10px 30px !important;
   letter-spacing: 1px;
   font-size: 14px !important;
@@ -93,6 +92,6 @@ section#about {
 }
 
 #about a.btn-default:hover {
-  color: rgba(25, 25, 112, 1);
+  color: rgba(37, 37, 37, 1);
   background-color: white;
 }
