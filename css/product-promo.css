@@ -71,7 +71,7 @@ section#about {
   height: 100vh;
 }
 
-#about .section-heading {
+#about .section-heading, #contact .section-heading {
   font-size: 35px;
   color: rgba(37, 37, 37, 1);
   letter-spacing: 1px;
@@ -171,4 +171,26 @@ section#promotions {
 #promotions .card-items p:nth-of-type(2) {
   margin-left: 10px;
   font-weight: 500;
+}
+
+section#contact {
+  padding-top: 150px;
+  height: 100vh;
+}
+
+#contact hr {
+  margin: 30px auto 0px;
+  height: 3px;
+  width: 50px;
+  background-color: RGB(255, 215, 0);
+}
+
+#contact p {
+  font-family: Georgia;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#contact a {
+  text-decoration: none;
 }
