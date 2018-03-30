@@ -20,7 +20,7 @@ header {
   height: 100vh;
 }
 
-header hr, #about hr {
+header hr, #about hr, #promotions hr {
   margin: 30px auto 0px;
   height: 3px;
   width: 50px;
@@ -131,3 +131,19 @@ section#products {
 
 .inner-box:hover { cursor: pointer; }
 .inner-box:hover .product-box-caption-content { transform: scale(1); }
+
+section#promotions {
+  padding-top: 120px;
+  background-color: RGB(255, 215, 0);
+  height: 100vh;
+}
+
+#promotions .section-heading {
+  font-size: 35px;
+  color: rgba(37, 37, 37, 1);
+  letter-spacing: 1px;
+}
+
+#promotions .card {
+  
+}
