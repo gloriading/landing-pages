@@ -95,3 +95,12 @@ section#about {
   color: rgba(37, 37, 37, 1);
   background-color: white;
 }
+
+section#products {
+  height: 100vh;
+  background-color: rgb(213,213,211);
+}
+
+#products .products-content {
+  padding-top: 100px;
+}
