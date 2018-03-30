@@ -104,3 +104,11 @@ section#products {
 #products .products-content {
   padding-top: 100px;
 }
+
+#products img {
+  /* min-height: 260px; */
+}
+
+#products .product-box-caption-content {
+  display:none;
+}
