@@ -98,17 +98,36 @@ section#about {
 
 section#products {
   height: 100vh;
-  background-color: rgb(213,213,211);
+  background-color: rgb(37, 37, 37);
 }
 
 #products .products-content {
   padding-top: 100px;
 }
 
-#products img {
-  /* min-height: 260px; */
+.product-box-caption-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: RGBA(255, 255, 255, 0.8);
+  -webkit-transform:scale(0);
+  transition: .3s ease;
+  font-size: 20px;
+  padding-top: 50px;
 }
 
-#products .product-box-caption-content {
-  display:none;
+.car-make {
+  font-weight: bold;
+  letter-spacing: 1px;
 }
+
+.inner-box {
+  position: relative;
+}
+
+.inner-box:hover { cursor: pointer; }
+.inner-box:hover .product-box-caption-content { transform: scale(1); }
