@@ -262,23 +262,27 @@
     </section>
     <script>
     $( document ).ready(function() {
-      console.log( "ready!" );
+
       $(document).scroll(function(){
         const nav = $('nav.fixed-top');
         nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
       });
 
-      $('a[href^="#"]').on('click', function(event) {
+      $('a[href^="#"]').on('click', function(e) {
           var target = $(this.getAttribute('href'));
           if( target.length ) {
-              event.preventDefault();
+              e.preventDefault();
               $('html, body').stop().animate({
                   scrollTop: target.offset().top
               }, 1000);
           }
       });
 
+    $(document).on('click','.navbar-collapse', function(e){
+        $(this).collapse('hide');
+      })
     });
+
     </script>
   </body>
 </html>
