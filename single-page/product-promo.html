@@ -262,12 +262,12 @@
     </section>
     <script>
     $( document ).ready(function() {
-
+      // changed navbar when scrolling
       $(document).scroll(function(){
         const nav = $('nav.fixed-top');
         nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
       });
-
+      // smoothly move to linking section
       $('a[href^="#"]').on('click', function(e) {
           var target = $(this.getAttribute('href'));
           if( target.length ) {
@@ -277,7 +277,7 @@
               }, 1000);
           }
       });
-
+      // hide the nav menu 
     $(document).on('click','.navbar-collapse', function(e){
         $(this).collapse('hide');
       })
