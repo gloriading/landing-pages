@@ -124,7 +124,7 @@ section#about {
 }
 
 section#products {
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(37, 37, 37);
 }
 
@@ -167,7 +167,7 @@ section#products {
 section#promotions {
   padding-top: 120px;
   background-color: RGB(255, 215, 0);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #promotions .section-heading {
