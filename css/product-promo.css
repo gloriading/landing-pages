@@ -31,10 +31,6 @@ nav button {
   outline: 0 !important;
 }
 
-nav span {
-
-}
-
 .scrolled span {
   color: rgb(255, 183, 77);
 }
@@ -44,7 +40,7 @@ header {
   background-image: url('https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header hr, #about hr, #promotions hr {
@@ -84,18 +80,18 @@ header a.btn-default {
   letter-spacing: 1px;
   font-size: 14px !important;
   text-transform: uppercase;
-  background-color: rgba(178, 34, 34, 0.8);
+  background-color: rgba(255, 215, 0, 0.8);
 }
 
 header a.btn-default:hover {
-  color: white;
-  background-color: rgba(178, 34, 34, 1);
+  color: black;
+  background-color: rgba(255, 215, 0, 1);
 }
 
 section#about {
   padding-top: 150px;
   background-color: RGB(255, 215, 0);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #about .section-heading, #contact .section-heading {
