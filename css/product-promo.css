@@ -152,6 +152,11 @@ section#products {
   letter-spacing: 1px;
 }
 
+.model-name p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
 .inner-box {
   position: relative;
 }
@@ -220,4 +225,9 @@ section#contact {
 
 #contact a {
   text-decoration: none;
+}
+
+.contact-info:hover .mail-icon{
+  transition: transform 1s ease;
+  transform: rotate(30deg) scale(0.5);
 }
