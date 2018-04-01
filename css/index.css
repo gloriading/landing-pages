@@ -40,16 +40,16 @@ section {
    border-radius: 10px;
 }
 
-.coming-soon-links h2 , .single-page-links h2 {
+.coming-soon-links h2 , .single-page-links h2, .multi-page-links h2{
   font-family: sans-serif;
   text-shadow: 0 0 3px white;
 }
 
-.coming-soon-links a , .single-page-links a{
+.coming-soon-links a , .single-page-links a, .multi-page-links a {
   color:inherit;
 }
 
-.coming-soon-links p , .single-page-links p{
+.coming-soon-links p , .single-page-links p, .multi-page-links p {
   font-size: 1.1em;
   font-family: helvetica, arial;
   transition: 1s ease;
@@ -63,6 +63,10 @@ section {
 
 .single-page-links p:hover {
   background-color: RGB(30, 144, 255);
+}
+
+.multi-page-links p:hover {
+  background-color: RGBA(205, 133, 63, 0.8);
 }
 
 footer {
