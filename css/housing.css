@@ -103,3 +103,38 @@ a.logo {
   .navbar a { padding: 5px 0px; }
   .dropdown .dropbtn { padding: 5px 0px; }
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.introduction {
+  width: 75vw;
+  height: 40vh;
+  border: 1px red solid;
+  padding: 60px 40px 20px 80px;
+  overflow: scroll;
+}
+
+.introduction h1 {
+  text-align: right;
+  font-family:serif;
+  font-size: 50px;
+  text-shadow: 0 1px 3px white;
+}
+
+.introduction p {
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+.servies-box {
+  width: 75vw;
+  height: 40vh;
+  border: 1px solid green;
+  padding: 60px 40px 20px 80px;
+  overflow: scroll;
+}
