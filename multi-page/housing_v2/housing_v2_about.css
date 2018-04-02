@@ -1,0 +1,70 @@
+/* Universal Settings */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+* { box-sizing: border-box; }
+a { text-decoration: none; }
+
+/*  Navbar  */
+nav {
+  box-shadow: 0 1px 1px white;
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  margin-left: 45%;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white !important;
+  transition: 0.5s ease;
+  transform: scale(1.5);
+}
+
+nav button {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.nav-item a {
+  color: black !important;
+  text-transform: uppercase;
+}
+.dropdown-menu a {
+  color: black !important;
+}
+.nav-item:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+@media screen and (max-width: 550px) {
+  .navbar-brand {
+    margin-left: 10%;
+    transform: scale(1);
+  }
+}
+
+/* header */
+header {
+  /* padding-top: 150px; */
+  background-image: url('https://images.pexels.com/photos/6213/woman-hand-pen-girl.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+.about-title {
+  font-family: monospace;
+  padding: 130px 20px 30px 20px;
+}
+.about-content {
+  padding: 10px 300px;
+}
