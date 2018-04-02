@@ -55,9 +55,36 @@ nav button {
     margin-left: 10%;
     transform: scale(1);
   }
-
 }
 
-main {
+header {
+  padding: 100px 20px 30px 20px;
+  border: 1px solid red;
+}
 
+.primaryMessage {
+  text-shadow: -1px -1px 5px white;
+}
+
+.primaryMessage hr {
+  margin: 30px auto 0px;
+  height: 3px;
+  width: 50px;
+  background-color: white;
+}
+
+.secondaryMessage p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+a.about-btn {
+  background-color: #12394f;
+  color: white;
+  letter-spacing: 1px;
+}
+
+a.about-btn:hover {
+  background-color: white;
+  color: #12394f;
 }
