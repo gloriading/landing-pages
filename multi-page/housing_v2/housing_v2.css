@@ -1,3 +1,45 @@
+
+/* Universal Settings */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  /* background-color: #5a5b62; */
+}
+
+* { box-sizing: border-box; }
+a { text-decoration: none; }
+
+/*  Navbar  */
+nav {
+  box-shadow: 0 1px 1px gray;
+}
 .navbar-brand {
   margin-left: 45%;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+nav button {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.nav-item a, .dropdown-menu a {
+  color: #362e1c !important;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-brand {
+    margin-left: 10%;
+  }
+
 }
