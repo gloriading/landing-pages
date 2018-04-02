@@ -65,6 +65,29 @@ header {
   font-family: monospace;
   padding: 130px 20px 30px 20px;
 }
+
 .about-content {
-  padding: 10px 300px;
+  border: 1px blue solid;
+  padding: 30px;
+}
+
+.owner-quote {
+  border-top: 3px red solid;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.owner-info h5 {
+  letter-spacing: 1px;
+  border-bottom: 3px solid red;
+}
+.owner-info p:first-of-type {
+  text-align: justify;
+}
+
+.owner-contact p {
+  margin: 5px 0px;
 }
