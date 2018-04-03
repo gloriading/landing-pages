@@ -15,7 +15,7 @@ body {
   height: 100vh;
 }
 * { box-sizing: border-box; }
-a { text-decoration: none; }
+a { text-decoration: none !important; }
 
 /*  Navbar  */
 nav {
@@ -87,7 +87,7 @@ header {
 }
 
 .owner-quote {
-  border-top: 3px red solid;
+  border-top: 3px rgba(18,57,79,0.8) solid;
 }
 
 .image-container img {
@@ -97,7 +97,7 @@ header {
 
 .owner-info h3 {
   letter-spacing: 1px;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid rgba(18,57,79,0.8);
 }
 .owner-info p:first-of-type {
   text-align: justify;
@@ -105,6 +105,18 @@ header {
 
 .owner-contact p {
   margin: 5px 0px;
+}
+
+.owner-contact a {
+  margin-left: 10px;
+  padding: 1px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black !important;
+}
+.owner-contact a:hover {
+  background-color: rgb(18,57,79);
+  color: white !important;
 }
 
 /* testimonials */
@@ -150,7 +162,6 @@ header {
 
 /* map */
 .map {
-  border: 1px dashed deeppink;
   padding: 80px 20px;
   background-color: whitesmoke;
 }
@@ -169,4 +180,17 @@ header {
 #googleMap {
   width: 100%;
   height: 400px;
+}
+
+/* footer */
+footer {
+  height: 10vh;
+  padding-top: 10px;
+}
+
+footer p {
+  text-align: right;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  margin: 5px 15px;
 }
