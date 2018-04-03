@@ -6,7 +6,14 @@ html, body {
   width: 100%;
   font-family: sans-serif;
 }
-
+body {
+  background-image: url('https://images.pexels.com/photos/6213/woman-hand-pen-girl.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 * { box-sizing: border-box; }
 a { text-decoration: none; }
 
@@ -21,7 +28,6 @@ nav {
   font-family: sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  text-transform: uppercase;
   color: white !important;
   transition: 0.5s ease;
   transform: scale(1.5);
@@ -50,13 +56,18 @@ nav button {
   }
 }
 
+.scrolled {
+  border-bottom: 1px solid white !important;
+  background-color: rgba(18,57,79,0.8) !important;
+  color: white !important;
+  transition: 1s ease;
+}
+.scrolled .nav-item a { color: white !important; }
+.scrolled .dropdown-menu a { color: white !important; }
+
+
 /* header */
 header {
-  background-image: url('https://images.pexels.com/photos/6213/woman-hand-pen-girl.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-position: bottom center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   height: 40vh;
 }
 
@@ -66,6 +77,7 @@ header {
 }
 
 .about-content {
+  background-color: white;
   padding: 50px 30px 80px 30px;
 }
 
@@ -96,14 +108,14 @@ header {
   padding: 80px 20px;
 }
 
-.test-box h3 {
-  text-transform: uppercase;
+.test-box h1 {
+  font-family: monospace;
   letter-spacing: 1px;
   margin-bottom: 50px;
 }
 
 .carousel {
-  background-image:linear-gradient(to right, rgba(208,203,182,0.3), rgba(208,203,182,0.8), rgba(208,203,182,0.3));
+  background-image:linear-gradient(to right, rgba(208,203,182,0.5), rgba(208,203,182,1), rgba(208,203,182,0.5));
   padding: 40px 100px;
   min-height: 300px;
 }
@@ -122,5 +134,5 @@ header {
 }
 
 .carousel-icon {
-  color: gray;
+  color: black;
 }
