@@ -76,8 +76,13 @@ header {
   padding: 130px 20px 30px 20px;
 }
 
+.about-title h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .about-content {
-  background-color: white;
+  background-color: whitesmoke;
   padding: 50px 30px 80px 30px;
 }
 
@@ -104,13 +109,13 @@ header {
 
 /* testimonials */
 .testimonials {
-  border: 1px dashed deeppink;
-  padding: 80px 20px;
+  padding: 80px 30px;
 }
 
 .test-box h1 {
   font-family: monospace;
   letter-spacing: 1px;
+  font-size: 40px;
   margin-bottom: 50px;
 }
 
@@ -118,6 +123,11 @@ header {
   background-image:linear-gradient(to right, rgba(208,203,182,0.5), rgba(208,203,182,1), rgba(208,203,182,0.5));
   padding: 40px 100px;
   min-height: 300px;
+}
+
+.carousel-item {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .carousel-item p {
@@ -136,4 +146,27 @@ header {
 
 .carousel-icon {
   color: black;
+}
+
+/* map */
+.map {
+  border: 1px dashed deeppink;
+  padding: 80px 20px;
+  background-color: whitesmoke;
+}
+
+.map-box h1 {
+  font-family: monospace;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.map-box p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+#googleMap {
+  width: 100%;
+  height: 400px;
 }

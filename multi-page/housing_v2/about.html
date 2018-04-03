@@ -47,7 +47,7 @@
       </div>
     </nav>
     <div class="about-title text-center">
-      <h2>About Us</h2>
+      <h1>About Us</h1>
     </div>
     </header>
     <section class="about-content">
@@ -89,7 +89,7 @@
     </section>
     <section class="testimonials">
       <div class="row">
-        <div class="col-md-8 text-center mx-auto test-box">
+        <div class="col-md-10 text-center mx-auto test-box">
           <h1>Testimonials</h1>
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -125,7 +125,18 @@
       </div>
 
     </section>
+    <section class="map">
+      <div class="row">
+        <div class="col-md-10 text-center mx-auto map-box">
+          <h1>Location</h1>
+          <p>1675 Versatile Dr, Kamloops, BC V1S 1W7</p>
+          <div id="googleMap"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
 
+    </footer>
   <script>
     $(document).ready(function(){
       console.log('ready');
@@ -135,6 +146,23 @@
         nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
       });
     });
+  </script>
+  <script>
+    //GoogleMap API
+    function initMap() {
+      var lovelyHousing = {lat: 50.654811, lng: -120.389339};
+      var map = new google.maps.Map(document.getElementById('googleMap'), {
+        zoom: 16,
+        center: lovelyHousing
+      });
+      var marker = new google.maps.Marker({
+        position: lovelyHousing,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIREClWIlIQW7pg-9JdI8PkkY2W6wGuRg&callback=initMap">
   </script>
   </body>
 </html>
