@@ -52,7 +52,6 @@ nav button {
 
 /* header */
 header {
-  /* padding-top: 150px; */
   background-image: url('https://images.pexels.com/photos/6213/woman-hand-pen-girl.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: bottom center;
   background-size: cover;
@@ -67,8 +66,7 @@ header {
 }
 
 .about-content {
-  border: 1px blue solid;
-  padding: 30px;
+  padding: 50px 30px 80px 30px;
 }
 
 .owner-quote {
@@ -80,7 +78,7 @@ header {
     max-height: 100%;
 }
 
-.owner-info h5 {
+.owner-info h3 {
   letter-spacing: 1px;
   border-bottom: 3px solid red;
 }
@@ -90,4 +88,39 @@ header {
 
 .owner-contact p {
   margin: 5px 0px;
+}
+
+/* testimonials */
+.testimonials {
+  border: 1px dashed deeppink;
+  padding: 80px 20px;
+}
+
+.test-box h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.carousel {
+  background-image:linear-gradient(to right, rgba(208,203,182,0.3), rgba(208,203,182,0.8), rgba(208,203,182,0.3));
+  padding: 40px 100px;
+  min-height: 300px;
+}
+
+.carousel-item p {
+  text-align: justify;
+}
+
+.carousel-item p.customers {
+  text-align: right;
+  font-style: italic;
+}
+
+.carousel-indicators li {
+  height: 10px !important;
+}
+
+.carousel-icon {
+  color: gray;
 }
