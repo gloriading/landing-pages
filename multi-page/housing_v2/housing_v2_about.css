@@ -63,7 +63,7 @@ nav button {
   transition: 1s ease;
 }
 .scrolled .nav-item a { color: white !important; }
-.scrolled .dropdown-menu a { color: white !important; }
+.scrolled .dropdown-menu a { color: rgba(18,57,79,1) !important; }
 
 
 /* header */
@@ -121,6 +121,7 @@ header {
 }
 
 .carousel-item p {
+  font-size: 18px;
   text-align: justify;
 }
 
