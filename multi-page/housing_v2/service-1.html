@@ -18,7 +18,68 @@
 
   </head>
   <body>
-    <h1>service 1</h1>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top navbar-light">
+        <a class="navbar-brand" href="index.html">Lovely Housing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Tenant / Owner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services <span class="sr-only">(current)</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="service-1.html"><strong>Service 1 <span class="sr-only">(current)</span></strong></a>
+                <a class="dropdown-item" href="service-2.html">Service 2</a>
+                <a class="dropdown-item" href="service-3.html">Service 3</a>
+                <a class="dropdown-item" href="service-4.html">Service 4</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="title text-center">
+        <h1>Service 1</h1>
+      </div>
+      </header>
+      <section class="service-intro">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h4>
+              <i class="far fa-check-circle"></i>
+              Benefits of choosing us
+            </h4>
+            <div class="card benefits">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+      </section>
+
+      <script>
+        $(document).ready(function(){
+          console.log('ready');
+          // changed navbar when scrolling
+          $(document).scroll(function(){
+            const nav = $('nav.fixed-top');
+            nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+          });
+        });
+      </script>
   </body>
 </html>
