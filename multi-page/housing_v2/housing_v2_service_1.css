@@ -71,7 +71,6 @@ nav button {
 /* header */
 header {
   height: 40vh;
-  border: 1px yellow solid;
 }
 
 .title {
@@ -85,8 +84,33 @@ header {
   color: rgba(255,255,255,1);
 }
 
-
-.service-intro {
+.benefit-intro {
   background-color: whitesmoke;
   padding: 50px 30px 80px 30px;
+}
+
+.benefit-intro h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.benefit-intro:hover .fa-check-circle {
+  animation: moving 1s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes moving {
+    0% { transform: translateY(3px) rotate(5deg); }
+    80% { transform: translateY(-3px) rotate(-5deg); }
+}
+
+.list-group-item {
+  font-size: 18px;
+  margin: 0 !important;
+  transition: background-color 0.8s ease;
+}
+
+.list-group-item:hover {
+  background-image:linear-gradient(to right, rgb(132,170,183), rgba(132,170,183,0.3));
+
 }
