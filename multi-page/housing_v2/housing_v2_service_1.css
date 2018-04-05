@@ -192,3 +192,16 @@ header {
   font-size: 18px;
   color: rgb(18,57,79);
 }
+
+/* footer */
+footer {
+  height: 10vh;
+  padding-top: 10px;
+}
+
+footer p {
+  text-align: right;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  margin: 5px 15px;
+}
