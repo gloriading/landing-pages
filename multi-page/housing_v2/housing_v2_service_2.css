@@ -82,6 +82,57 @@ header {
   border: 1px blue dashed;
 }
 
+/* listing tab section */
+.listing-tab {
+  padding: 50px 80px;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 3px solid black;
+    background-color: rgba(255,255,255,0.5);
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none !important;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tab button:hover {
+  background-color: rgba(255,255,255,1);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: lightcoral;
+    font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 20px;
+    border: 3px solid black;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
 /* footer */
 footer {
   height: 10vh;

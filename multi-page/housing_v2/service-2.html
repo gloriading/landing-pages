@@ -50,31 +50,63 @@
         <h1>Housing Listing</h1>
       </div>
     </header>
-    <section>
-      <div class="row">
-        <div class="col-sm-3 type">
-          <h3>Bachelor</h3>
-          <p>Total: 5</p>
-          <p>Available: 0</p>
-        </div>
-        <div class="col-sm-3 type">
-          <h3>One-Bedroom</h3>
-          <p>Total: 10</p>
-          <p>Available: 2</p>
-        </div>
-        <div class="col-sm-3 type">
-          <h3>Two-Bedroom</h3>
-          <p>Total: 4</p>
-          <p>Available: 1</p>
-        </div>
-        <div class="col-sm-3 type">
-          <h3>Cabin</h3>
-          <p>Total: 3</p>
-          <p>Available: 1</p>
-        </div>
+
+    <section class="listing-tab">
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openType(event, 'Bachelor')"
+          id="defaultOpen">
+          Bachelor
+        </button>
+        <button
+          class="tablinks"
+          onclick="openType(event, 'OneBedroom')">
+          One-Bedroom
+        </button>
+        <button
+          class="tablinks"
+          onclick="openType(event, 'TwoBedroom')">
+          Two-Bedroom
+        </button>
       </div>
+
+      <div id="Bachelor" class="tabcontent">
+        <h3>Bachelor</h3>
+        <p>Total: 10 </p>
+        <p>Available: 2 </p>
+      </div>
+
+      <div id="OneBedroom" class="tabcontent">
+        <h3>One-Bedroom</h3>
+        <p>Total: 16 </p>
+        <p>Available: 0 </p>
+      </div>
+
+      <div id="TwoBedroom" class="tabcontent">
+        <h3>Two-Bedroom</h3>
+        <p>Total: 4 </p>
+        <p>Available: 1 </p>
+      </div>
+
     </section>
 
+    <script>
+    function openType(evt, cityName) {
+    let allTabContents, allTabLinks;
 
+    allTabContents = document.querySelectorAll('.tabcontent');
+      allTabContents.forEach(tabContent => tabContent.style.display = "none");
+
+      allTabLinks = document.querySelectorAll('.tablinks');
+      allTabLinks.forEach(tabLink => tabLink.classList.remove("active"));
+
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.classList.add("active");
+    }
+
+    document.getElementById("defaultOpen").click();
+
+    </script>
   </body>
 </html>
