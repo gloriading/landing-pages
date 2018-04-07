@@ -89,6 +89,7 @@ header {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     min-width: 400px;
+    box-shadow: 0px 1px 5px black;
 }
 
 /* Style the buttons inside the tab */
@@ -121,6 +122,26 @@ header {
     border: 1px solid #ccc;
     border-top: none;
     background-color: whitesmoke !important;
+    box-shadow: 1px 1px 5px black;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.tabcontent h3 {
+  letter-spacing: 1px;
+}
+
+.tabcontent .badge {
+  font-size: 14px;
+}
+
+.tabcontent .description {
+  padding: 10px 30px;
+  text-align: justify;
+}
+
+.description p {
+  font-size: 18px;
 }
 
 /* footer */
