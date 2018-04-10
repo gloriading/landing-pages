@@ -79,7 +79,6 @@ header {
 
 /* listing tab section */
 .listing-tab {
-  border: 2px blue solid;
   padding: 50px 80px;
 }
 
@@ -146,9 +145,10 @@ header {
 
 
 /* modal */
-button.btn-secondary {
+.btn-secondary, .btn-info {
   letter-spacing: 1px;
 }
+
 .modal-content {
   height: 90vh;
   padding: 50px;
