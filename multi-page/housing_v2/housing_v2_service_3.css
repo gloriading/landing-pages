@@ -1,0 +1,91 @@
+/* Universal Settings */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/271667/pexels-photo-271667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+* { box-sizing: border-box; }
+a { text-decoration: none !important; }
+
+/*  Navbar  */
+nav {
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+  background-color: rgba(18,57,79,0.8) !important;
+  color: white !important;
+}
+
+.navbar-brand {
+  margin-left: 45%;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white !important;
+  transition: 0.5s ease;
+  transform: scale(1.5);
+}
+
+nav button {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.nav-item a {
+  color: white !important;
+  text-transform: uppercase;
+}
+.dropdown-menu a {
+  color: rgba(18,57,79,1) !important;
+}
+.nav-item:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+@media screen and (max-width: 550px) {
+  .navbar-brand {
+    margin-left: 10%;
+    transform: scale(1);
+  }
+}
+
+
+/* header */
+header {
+  height: 30vh;
+}
+
+.title {
+  font-family: monospace;
+  padding: 100px 20px 30px 20px;
+}
+
+.title h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 3px white;
+}
+
+/* footer */
+footer {
+  height: 10vh;
+  padding-top: 10px;
+}
+
+footer p {
+  text-align: right;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  margin: 5px 15px;
+}
