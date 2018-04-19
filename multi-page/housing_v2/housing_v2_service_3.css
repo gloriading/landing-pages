@@ -77,15 +77,42 @@ header {
   text-shadow: 1px 1px 3px white;
 }
 
-/* footer */
-footer {
-  height: 10vh;
-  padding-top: 10px;
+/* section */
+section {
+  border: 1px black solid;
+  width: 100%;
+  height: 65vh;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-footer p {
-  text-align: right;
-  letter-spacing: 0.5px;
-  font-weight: bold;
-  margin: 5px 15px;
+.items {
+  height:300px;
+  padding: 20px;
+  width: 100%;
+  border:1px solid white;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  background: rgba(255,255,255,0.1);
+  font-size: 20;
+  perspective: 400px;
+}
+.item {
+  width:150px;
+  height: calc(100% - 40px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 100;
+  color:rgba(0,0,0,0.55);
+  box-shadow: inset 0 0 0 5px rgba(0,0,0,0.15);
 }
