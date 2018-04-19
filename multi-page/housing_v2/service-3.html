@@ -51,8 +51,9 @@
       </div>
     </header>
     <section>
+      <i class="fas fa-arrows-alt-h fa-2x"></i>
       <div class="items">
-        <div class="item item1">01</div>
+        <div class="item">01</div>
         <div class="item item2">02</div>
         <div class="item item3">03</div>
         <div class="item item4">04</div>
@@ -65,6 +66,16 @@
       </div>
     </section>
 
+  <script>
+    const itemList = document.querySelectorAll('.item');
 
+    itemList.forEach(item => {
+      item.addEventListener('click',function(e){
+        item.classList.toggle('enlarge');
+        let number = e.currentTarget.innerHTML;
+        item.classList.toggle(`item${number}`);
+      });
+    });
+  </script>
   </body>
 </html>
