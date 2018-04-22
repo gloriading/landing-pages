@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+
 /* Universal Settings */
 html, body {
   margin: 0;
@@ -80,11 +82,45 @@ header {
 /* main */
 
 main {
-  background-color: rgba(0,0,0,0.7);
+  background-color: whitesmoke;
+  color: black;
 }
-
 
 img {
   margin: 20px;
+  width: 80%;
   max-width: 100%;
+}
+
+.handy-right {
+  padding: 20px 30px;
+  margin: 10px;
+}
+
+.handy-right p {
+  margin-left: 10px;
+  color: rgba(0,0,0,0.5);
+}
+
+.handy-right h2 {
+  color: rgba(0,0,0,0.5);
+  margin-bottom: -20px;
+  margin-left: 30px;
+}
+
+.service-list {
+  font-family: 'Arapey', serif;
+  letter-spacing: 1px;
+}
+
+.service-list li {
+  margin-top: 5px;
+}
+
+.handy-contact {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.2);
 }
