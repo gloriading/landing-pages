@@ -94,9 +94,9 @@ aside {
   background-color: hsl(0, 97%, 92%);
 }
 aside h2 {
-  color: hsl(0, 97%, 22%)
+  color: hsl(0, 97%, 22%);
 }
-.profile-image, .profile-intro {
+.profile-image, .profile-intro, .social-media {
   padding: 10px;
   border: 1px dotted hsl(0, 97%, 22%);
   text-align: center;
@@ -114,11 +114,19 @@ aside h2 {
   max-width: 80%;
   height: auto;
 }
-.profile-intro {
+.profile-intro, .social-media {
   border: none;
 }
 .profile-intro p {
   text-align: justify;
   line-height: 1.5em;
   font-family: 'Abel', sans-serif;
+}
+.social-media a {
+  text-decoration: none;
+  color: hsl(0, 97%, 22%);
+  transition: 0.2s ease;
+}
+.social-media a:hover {
+  color: hsl(0, 97%, 62%);
 }
