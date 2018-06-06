@@ -9,14 +9,16 @@ html, body {
 
 /* ------------ header ---------------*/
 header {
-  padding: 60px;
+  padding: 100px;
   background-color: hsl(0, 97%, 72%);
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 70px;
   color: hsl(0, 97%, 22%);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   font-family: 'Comfortaa', arial;
 }
 header p {
@@ -26,9 +28,10 @@ header p {
 }
 
 /* ------------ Navbar ---------------*/
+
 nav {
   overflow: hidden;
-  background-color: hsl(0, 97%, 32%);
+  background-color: rgba(5, 196, 107, 0.8);
 }
 nav a {
   color: white;
@@ -41,21 +44,81 @@ nav a {
   float: right;
 }
 nav a:hover {
-  background-color: hsl(0, 97%, 72%);
+  background-color: rgba(5, 196, 107, 1);
 }
+
 
 /* ------------ Main Content -------------*/
 main {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 700px) {
+    main { flex-direction: column; }
+}
 section {
   flex: 70%;
   padding: 25px;
   background-color: hsl(109, 11%, 91%);
 }
+.post-container {
+  padding: 30px;
+  box-shadow: 0 0 5px rgba(5, 196, 107, 0.4);
+  margin-bottom: 10px;
+}
+.post-container h3,
+.post-container h5 {
+  margin:0;
+}
+.post-container h5 {
+  text-align: right;
+}
+.post-container img {
+  max-width: 80%;
+  height: auto;
+}
+.post-content p {
+  padding-left: 10px;
+  border-left: 1px solid rgba(5, 196, 107, 1);
+  text-align: justify;
+  line-height: 1.5em;
+  font-family: 'Abel', sans-serif;
+
+}
+
+
+/* ------------------------------ */
 aside {
   flex: 30%;
   padding: 25px;
-  
+  background-color: hsl(0, 97%, 92%);
+}
+aside h2 {
+  color: hsl(0, 97%, 22%)
+}
+.profile-image, .profile-intro {
+  padding: 10px;
+  border: 1px dotted hsl(0, 97%, 22%);
+  text-align: center;
+}
+.profile-image h4,
+.profile-image h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+.profile-image h5 {
+  margin-bottom: 10px;
+}
+.profile-image img {
+  max-width: 80%;
+  height: auto;
+}
+.profile-intro {
+  border: none;
+}
+.profile-intro p {
+  text-align: justify;
+  line-height: 1.5em;
+  font-family: 'Abel', sans-serif;
 }
