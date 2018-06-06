@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Comfortaa');
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------ header ---------------*/
+header {
+  padding: 60px;
+  background-color: hsl(0, 97%, 72%);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 50px;
+  color: hsl(0, 97%, 22%);
+  font-family: 'Comfortaa', arial;
+}
+header p {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Abel', sans-serif;
+}
+
+/* ------------ Navbar ---------------*/
+nav {
+  overflow: hidden;
+  background-color: hsl(0, 97%, 32%);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  float: left;
+}
+.right {
+  float: right;
+}
+nav a:hover {
+  background-color: hsl(0, 97%, 72%);
+}
+
+/* ------------ Main Content -------------*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+section {
+  flex: 70%;
+  padding: 25px;
+  background-color: hsl(109, 11%, 91%);
+}
+aside {
+  flex: 30%;
+  padding: 25px;
+  
+}
