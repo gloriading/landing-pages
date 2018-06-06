@@ -19,7 +19,7 @@ header h1 {
   font-size: 70px;
   color: hsl(0, 97%, 22%);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  font-family: 'Comfortaa', arial;
+  font-family: arial;
 }
 header p {
   margin: 0;
@@ -69,6 +69,7 @@ section {
 .post-container h3,
 .post-container h5 {
   margin:0;
+  font-family: 'Comfortaa', arial;
 }
 .post-container h5 {
   text-align: right;
