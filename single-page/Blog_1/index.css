@@ -10,33 +10,35 @@ html, body {
 /* ------------ header ---------------*/
 header {
   padding: 100px;
-  background-color: hsl(0, 97%, 72%);
+  background-color: rgba(9, 132, 227,1.0);
   text-align: center;
 }
 
 header h1 {
   margin: 0;
   font-size: 70px;
-  color: hsl(0, 97%, 22%);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: rgba(116, 185, 255, 0.5);
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 1);
   font-family: arial;
 }
 header p {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Abel', sans-serif;
+  color:rgba(45, 52, 54,1.0);
 }
 
 /* ------------ Navbar ---------------*/
 
 nav {
   overflow: hidden;
-  background-color: rgba(5, 196, 107, 0.8);
+  background-color: rgba(9, 132, 227, 0.5);
 }
 nav a {
-  color: white;
+  color:rgba(45, 52, 54,1.0);
   text-decoration: none;
   padding: 20px;
+  margin-right: 10px;
   display: block;
   float: left;
 }
@@ -44,7 +46,7 @@ nav a {
   float: right;
 }
 nav a:hover {
-  background-color: rgba(5, 196, 107, 1);
+  background-color: rgba(9, 132, 227,1.0);
 }
 
 
@@ -59,12 +61,15 @@ main {
 section {
   flex: 70%;
   padding: 25px;
-  background-color: hsl(109, 11%, 91%);
+  background-color: rgba(223, 230, 233,1.0);
 }
+
 .post-container {
+  border-top: 5px solid rgba(9, 132, 227,1.0);
   padding: 30px;
-  box-shadow: 0 0 5px rgba(5, 196, 107, 0.4);
-  margin-bottom: 10px;
+  box-shadow: 1px 2px 2px rgba(9, 132, 227, 0.2);
+  margin-bottom: 20px;
+  background-color: whitesmoke;
 }
 .post-container h3,
 .post-container h5 {
@@ -88,19 +93,36 @@ section {
 }
 
 
-/* ------------------------------ */
+/* -------Sidebar------------ */
 aside {
   flex: 30%;
   padding: 25px;
-  background-color: hsl(0, 97%, 92%);
+  background-color: rgba(99, 110, 114, 0.4);
 }
-aside h2 {
-  color: hsl(0, 97%, 22%);
+.profile-image {
+  background-color: rgba(223, 230, 233,1.0);
+  border-bottom-right-radius: 100px;
 }
 .profile-image, .profile-intro, .social-media {
   padding: 10px;
-  border: 1px dotted hsl(0, 97%, 22%);
   text-align: center;
+  position: relative;
+}
+.name-tag {
+  position:absolute;
+  bottom: 0px;
+  right: -2px;
+  width: 200px;
+  height: 200px;
+  border: 8px solid white;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(223, 230, 233,1.0);
+  z-index: 99;
 }
 .profile-image h4,
 .profile-image h5 {
@@ -108,26 +130,43 @@ aside h2 {
   letter-spacing: 1px;
   margin: 5px;
 }
-.profile-image h5 {
-  margin-bottom: 10px;
-}
+
 .profile-image img {
+  margin-top: 40px;
+  margin-bottom: 100px;
   max-width: 80%;
   height: auto;
+  box-shadow: 0 1px 3px rgba(45, 52, 54, 0.4);
 }
 .profile-intro, .social-media {
   border: none;
 }
 .profile-intro p {
   text-align: justify;
-  line-height: 1.5em;
+  line-height: 2em;
   font-family: 'Abel', sans-serif;
 }
 .social-media a {
   text-decoration: none;
-  color: hsl(0, 97%, 22%);
+  color: rgba(9, 132, 227, 0.8);
   transition: 0.2s ease;
+  font-size: 1.2em;
+  display: inline-block;
 }
 .social-media a:hover {
-  color: hsl(0, 97%, 62%);
+  color: rgba(9, 132, 227,1.0);
+  transform: scale(1.2);
+}
+
+/* -------  footer ------------ */
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(9, 132, 227, 0.5);
+}
+footer p {
+  text-align: right;
+  font-size: 0.8em;
+  padding-right: 30px;
+  color:rgba(9, 132, 227,1.0);
 }
