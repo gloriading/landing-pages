@@ -1,0 +1,146 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, arial;
+}
+* {
+  box-sizing: border-box;
+}
+nav#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  padding: 30px 10px;
+  background-color: rgba(255, 192, 72,1.0);
+}
+
+nav#navbar header {
+  padding: 10px;
+  font-size: 2em;
+  color: rgba(34, 47, 62,1.0);
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+#dropDown {
+  border: 1px solid grey;
+  text-align: center;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  display: none;
+}
+#links {
+  text-align: center;
+  height: calc(100% - 100px);
+  border: 1px solid;
+  overflow-y: auto;
+}
+a.nav-link {
+  display: block;
+  padding: 20px 10px 20px 10px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #1e272e;
+  box-shadow: 0 1px rgba(255, 221, 89, 0.8);
+}
+a.nav-link:hover {
+  box-shadow: 0 3px rgba(255, 221, 89, 1);
+  letter-spacing: 0.5px;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  padding: 30px 10px;
+}
+
+
+/* main section */
+
+.main-section {
+  border-bottom: 3px solid rgba(255, 192, 72, 0.8);
+  margin-top: 80px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+#title {
+  font-size: 30px;
+}
+.main-section header {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color:rgba(30, 39, 46, 1.0);
+}
+.main-section li {
+  padding: 3px;
+  margin-top: 5px;
+}
+.main-section li:hover {
+  background-color: rgba(255, 192, 72, 0.3);
+}
+.main-section p {
+  line-height: 1.5em;
+  text-align: justify;
+  text-indent: 2em;
+  letter-spacing: 0.8px;
+}
+article {
+  overflow: auto;
+}
+pre {
+  background-color: rgba(210, 218, 226, 0.6);
+}
+
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  body {
+      /* background-color: lightblue; */
+  }
+
+  nav#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(29, 209, 161,1.0);
+    padding: 30px 10px;
+    max-height: 150px;
+    z-index: 2;
+    display: flex;
+  }
+  nav#navbar header {
+    padding: 0px;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  #links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  a.nav-link {
+    font-size: 0.8em;
+    padding: 10px;
+    box-shadow: none;
+  }
+  a.nav-link:hover {
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: none;
+    letter-spacing: 1px;
+  }
+  #main-doc {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 200px 50px;
+  }
+}
