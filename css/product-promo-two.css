@@ -12,6 +12,15 @@ html, body {
 * { box-sizing: border-box; }
 a { text-decoration: none; }
 
+header hr,
+#about hr,
+#promotions hr {
+  margin: 30px auto 0px;
+  height: 3px;
+  width: 50px;
+  background-color: white;
+}
+
 /* nav */
 nav {
   font-family: 'Lato', sans-serif;
@@ -50,28 +59,25 @@ header {
   background: #fc00ff;
   background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
   background: linear-gradient(to right, #00dbde, #fc00ff);
-
-  /* background-image: url('https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-position: center;
-  background-size: cover; */
   min-height: 100vh;
+  position: relative;
+}
+header .texture {
+  position: absolute;
+  top: -150px;
+  width: 100%;
+  height: calc(100% + 150px);
+  background-color: rgba(255,255,255,0.1);
+  background: repeating-linear-gradient(90deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 5%, transparent 0, transparent 50%) 0 / 15px 15px, repeating-linear-gradient(180deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 5%, transparent 0, transparent 50%) 0 / 15px 15px;
 }
 
-header hr, #about hr, #promotions hr {
-  margin: 30px auto 0px;
-  height: 3px;
-  width: 50px;
-  background-color: white;
+header .primaryMessage {
+  padding: 20px 180px;
 }
 
-.primaryMessage {
-  padding: 5px 180px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.primaryMessage h1 {
-  font-size: 45px;
-  text-transform: uppercase;
+header .primaryMessage h1 {
+  font-size: 55px;
+  font-weight: 200;
   letter-spacing: 2px;
   color: white;
 }
@@ -81,25 +87,14 @@ header hr, #about hr, #promotions hr {
   .primaryMessage h1 { font-size: 30px; }
 }
 
-.secondaryMessage {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.secondaryMessage p, #about p {
-  font-family: Georgia;
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 header a.btn-default {
-  margin-top: 30px;
+  margin-top: 60px;
   color: white;
-  padding: 10px 30px !important;
+  padding: 15px 55px !important;
   letter-spacing: 1px;
-  font-size: 14px !important;
+  font-size: 18px !important;
   text-transform: uppercase;
-  background-color: rgba(255, 215, 0, 0.8);
+  border: 2px solid white;
 }
 
 header a.btn-default:hover {
@@ -107,6 +102,27 @@ header a.btn-default:hover {
   background-color: rgba(255, 215, 0, 1);
 }
 
+header img {
+  /* vertically align the image */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /* contain the image within the div */
+  max-width:100%;
+  max-height:100%;
+  /* blend the image in the background */
+  opacity: 0.8;
+}
+
+/* about page */
+
+
+#about p {
+  font-family: Georgia;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+}
 section#about {
   padding-top: 150px;
   background-color: RGB(255, 215, 0);
