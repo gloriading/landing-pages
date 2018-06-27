@@ -8,7 +8,7 @@
 * Product-promotion page (car sale)
 
 ### In progress:
-* Product-promotion page (games)
+#### ❊ Product-promotion page (games)
 
 ![Alt text](/images/product-promo-two.png?raw=true "product promotion games")
 
