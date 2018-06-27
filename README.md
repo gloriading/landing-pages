@@ -5,8 +5,12 @@
 
 ### What I've created:
 * Three different Coming-soon pages
-### In progress:
-* Product-promotion page
+* Product-promotion page (car sale)
 
-#### ❊ product promotion preview
-![Alt text](/images/product-promo.png?raw=true "product promotion")
+### In progress:
+* Product-promotion page (games)
+
+![Alt text](/images/product-promo-two.png?raw=true "product promotion games")
+
+#### ❊ product promotion (car)
+![Alt text](/images/product-promo.png?raw=true "product promotion cars")

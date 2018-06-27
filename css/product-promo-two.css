@@ -124,7 +124,8 @@ section#about {
 }
 
 #about .section-heading,
-#features, .section-heading,
+#features .section-heading,
+#promotions .section-heading,
 #contact .section-heading {
   font-size: 50px;
   font-weight: 300;
@@ -243,14 +244,14 @@ section#features {
 
 section#promotions {
   padding-top: 120px;
-  background-color: RGB(255, 215, 0);
+  background-image: url('../images/gaming-bg.jpeg');
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
 }
 
 #promotions .section-heading {
-  font-size: 35px;
-  color: rgba(37, 37, 37, 1);
-  letter-spacing: 1px;
+  color: white;
 }
 
 #promotions .card {
