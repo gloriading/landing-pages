@@ -62,7 +62,7 @@ header {
   min-height: 100vh;
   position: relative;
 }
-header .texture {
+header .texture-header {
   position: absolute;
   top: -150px;
   width: 100%;
@@ -76,15 +76,10 @@ header .primaryMessage {
 }
 
 header .primaryMessage h1 {
-  font-size: 55px;
+  font-size: 60px;
   font-weight: 200;
   letter-spacing: 2px;
   color: white;
-}
-
-@media screen and (max-width: 650px) {
-  .primaryMessage { padding: 5px 90px; }
-  .primaryMessage h1 { font-size: 30px; }
 }
 
 header a.btn-default {
@@ -116,7 +111,6 @@ header img {
 
 /* about page */
 
-
 #about p {
   font-family: Georgia;
   font-size: 20px;
@@ -129,42 +123,52 @@ section#about {
   min-height: 100vh;
 }
 
-#about .section-heading, #contact .section-heading {
-  font-size: 35px;
+#about .section-heading,
+#contact .section-heading {
+  font-size: 50px;
+  font-weight: 300;
   color: rgba(37, 37, 37, 1);
   letter-spacing: 1px;
 }
 
 #about p {
+  font-size: 20px;
   color: rgba(37, 37, 37, 0.9);
+  line-height: 2em;
 }
 
 #about a.btn-default {
   margin-top: 30px;
-  color: rgba(37, 37, 37, 1);
-  padding: 10px 30px !important;
+  color: black;
+  padding: 15px 55px !important;
   letter-spacing: 1px;
-  font-size: 14px !important;
+  font-size: 18px !important;
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid white;
 }
 
 #about a.btn-default:hover {
-  color: rgba(37, 37, 37, 1);
-  background-color: white;
+  color: white;
+  background: #fc00ff;
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
+  background: linear-gradient(to right, #00dbde, #fc00ff);
+
 }
 
-section#products {
+
+/* features page */
+
+section#features {
   min-height: 100vh;
   background-color: rgb(37, 37, 37);
 }
 
-#products .products-content {
+#features .products-content {
   padding-top: 100px;
 }
 
 @media screen and (max-width: 650px) {
-  #products .products-content {
+  #features .products-content {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -275,4 +279,33 @@ section#contact {
 .contact-info:hover .mail-icon{
   transition: transform 1s ease;
   transform: rotate(30deg) scale(0.5);
+}
+
+/* responsive settings */
+
+
+@media screen and (max-width: 600px) {
+/* header */
+  header .primaryMessage {
+    padding: 5px 90px;
+  }
+  header .primaryMessage h1 {
+    font-size: 35px;
+    line-height: 1.5em;
+  }
+  div.img-box {
+    display: none;
+  }
+/* about */
+#about .container {
+  padding: 20px;
+}
+  #about .section-heading {
+    font-size: 35px;
+    line-height: 1.5em;
+  }
+  #about p {
+    line-height: 1.5em;
+  }
+
 }
