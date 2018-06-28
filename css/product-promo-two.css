@@ -21,6 +21,13 @@ header hr,
   background-color: white;
 }
 
+.section-heading {
+  font-size: 50px;
+  font-weight: 300;
+  color: rgba(37, 37, 37, 1);
+  letter-spacing: 1px;
+}
+
 /* nav */
 nav {
   font-family: 'Lato', sans-serif;
@@ -41,7 +48,7 @@ nav button {
 
 .scrolled {
   border-bottom: 1px solid rgb(255, 183, 77) !important;
-  background-color: whitesmoke !important;
+  background-color: white !important;
   color: rgba(0,0,0,0.7) !important;
   transition: 1s ease;
 }
@@ -121,16 +128,6 @@ section#about {
   padding-top: 150px;
   background-color: RGB(255, 215, 0);
   min-height: 100vh;
-}
-
-#about .section-heading,
-#features .section-heading,
-#promotions .section-heading,
-#contact .section-heading {
-  font-size: 50px;
-  font-weight: 300;
-  color: rgba(37, 37, 37, 1);
-  letter-spacing: 1px;
 }
 
 #about p {
@@ -248,47 +245,85 @@ section#promotions {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.texture-promo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-120px);
+  background-color: rgba(0,0,0,0.1);
+  background: repeating-linear-gradient(90deg, rgba(0,0,0,0.1) 0, rgba(0,0,0,0.1) 5%, transparent 0, transparent 50%) 0 / 15px 15px, repeating-linear-gradient(180deg, rgba(0,0,0,0.1) 0, rgba(0,0,0,0.1) 5%, transparent 0, transparent 50%) 0 / 15px 15px;
 }
 
 #promotions .section-heading {
   color: white;
 }
 
-#promotions .card {
-  padding: 0;
-  border: 0;
-  transition: transform 0.3s ease;
+.price-square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  text-align: center;
+  position: relative;
+  transition: 0.2s;
+
+}
+.price-square h2 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.price-square div {
+  position: absolute;
+  top: 30%;
 }
 
-@media screen and (max-width: 650px) {
-  #promotions .row {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+.price-square div span {
+  position: absolute;
+  top: 10px;
 }
 
-#promotions .card:hover {
-  box-shadow: 1px 1px 10px black;
-  transform: scale(1.1);
+.price-square div .dollar-sign {
+  left: 20px;
+  font-size: 30px;
+}
+.price-square div .dollar {
+  left: 40px;
+  font-size: 60px;
+  font-weight: bold;
+}
+.price-square div .cents-one {
+  left: 80px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.price-square div .cents-two {
+  left: 110px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-#promotions .card-header {
-  background-color: rgb(37, 37, 37) !important;
-  color: whitesmoke;
-}
-
-#promotions .card-header h4 {
+.price-square div .month {
+  top: 60px;
+  left: 120px;
   font-size: 20px;
+  font-weight: bold;
+}
+.price-square:hover {
+  z-index: 2;
+  transform: scale(1.2) rotate(5deg);
+  cursor: pointer;
+  background-color: RGBA(255, 215, 0, 1);
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
-#promotions .card-items p:first-of-type {
-  background-image: linear-gradient(to left, rgba(255, 183, 77, 0), rgba(255, 183, 77, 0.7));
-}
-
-#promotions .card-items p:nth-of-type(2) {
-  margin-left: 10px;
-  font-weight: 500;
-}
+/* contact */
 
 section#contact {
   padding-top: 150px;
@@ -312,9 +347,36 @@ section#contact {
   text-decoration: none;
 }
 
-.contact-info:hover .mail-icon{
-  transition: transform 1s ease;
-  transform: rotate(30deg) scale(0.5);
+#contact .social-media{
+  display: flex;
+  justify-content: center;
+}
+.sm-icon {
+  border-radius: 100%;
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 2em;
+  color: white;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin-left: 10px;
+  transition: 0.2s;
+}
+.sm-icon:first-of-type {
+  background-color: #55acee;
+  margin-left: 0px;
+}
+.sm-icon:nth-last-of-type(2) {
+  background-color: #dd4b39;
+}
+.sm-icon:last-of-type {
+  background-color: #0077B5;
+}
+.sm-icon:hover {
+  box-shadow: -1px -1px 5px rgba(0,0,0,0.5);
+  transform: scale(0.9);
+  cursor:pointer;
 }
 
 /* responsive settings */
@@ -339,12 +401,21 @@ section#contact {
   #about .section-heading {
     font-size: 35px;
     line-height: 1.5em;
+    padding: 0 20px;
   }
   #about p {
     line-height: 1.5em;
+    padding: 0 20px;
+    text-align: justify;
   }
 /* features */
   #features .section-heading {
+    font-size: 35px;
+    line-height: 1.5em;
+    padding: 0 20px;
+  }
+  /* price/promo */
+  #promotions .section-heading {
     font-size: 35px;
     line-height: 1.5em;
     padding: 0 20px;
