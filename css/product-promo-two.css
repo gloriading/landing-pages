@@ -380,7 +380,14 @@ section#contact {
 }
 
 /* footer */
-
+footer {
+  padding: 20px;
+  background-color: rgba(37, 37, 37, 1);
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9em;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
 
 /* responsive settings */
 
