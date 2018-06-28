@@ -379,6 +379,9 @@ section#contact {
   cursor:pointer;
 }
 
+/* footer */
+
+
 /* responsive settings */
 
 
@@ -394,30 +397,24 @@ section#contact {
   div.img-box {
     display: none;
   }
+
+/* section-heading */
+.section-heading {
+  font-size: 35px;
+  line-height: 1.5em;
+  padding: 0 20px;
+}
+
 /* about */
+/* contact */
   #about .container {
     padding: 20px;
   }
-  #about .section-heading {
-    font-size: 35px;
-    line-height: 1.5em;
-    padding: 0 20px;
-  }
-  #about p {
+  #about p,
+  #contact p {
     line-height: 1.5em;
     padding: 0 20px;
     text-align: justify;
   }
-/* features */
-  #features .section-heading {
-    font-size: 35px;
-    line-height: 1.5em;
-    padding: 0 20px;
-  }
-  /* price/promo */
-  #promotions .section-heading {
-    font-size: 35px;
-    line-height: 1.5em;
-    padding: 0 20px;
-  }
+
 }
