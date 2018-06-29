@@ -367,11 +367,17 @@ section#contact {
   background-color: #55acee;
   margin-left: 0px;
 }
-.sm-icon:nth-last-of-type(2) {
+.sm-icon:nth-of-type(2) {
   background-color: #dd4b39;
 }
-.sm-icon:last-of-type {
+.sm-icon:nth-of-type(3) {
   background-color: #0077B5;
+}
+.sm-icon:nth-of-type(4) {
+  background-color: #e91e63;
+}
+.sm-icon:last-of-type {
+  background-color: #388e3c;
 }
 .sm-icon:hover {
   box-shadow: -1px -1px 5px rgba(0,0,0,0.5);
@@ -422,6 +428,12 @@ footer {
     line-height: 1.5em;
     padding: 0 20px;
     text-align: justify;
+  }
+  .sm-icon {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
   }
 
 }
