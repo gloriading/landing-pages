@@ -167,7 +167,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 promo-left">
-            <div class="price-square">
+            <div class="price-square" data-toggle="modal" data-target=".price-tag-starter">
               <h2>starter</h2>
               <div class="price">
                 <span class="dollar-sign">$</span>
@@ -175,36 +175,14 @@
                 <span class="cents-one">95</span>
                 <span class="month">/mo.</span>
               </div>
-              <div class="details">
-                <p>
-                  + Choice of 3 FREE games each month
-                </p>
-                <p>
-                  + Invite 2 friends to a game trial each season
-                </p>
-                <p>
-                  + 2 Free entry to gaming conference
-                </p>
-              </div>
             </div>
-            <div class="price-square">
+            <div class="price-square" data-toggle="modal" data-target=".price-tag-deluxe">
               <h2>deluxe</h2>
               <div class="price">
                 <span class="dollar-sign">$</span>
                 <span class="dollar">12</span>
                 <span class="cents-two">95</span>
                 <span class="month">/mo.</span>
-              </div>
-              <div class="details">
-                <p>
-                  + Choice of 5 FREE games each month
-                </p>
-                <p>
-                  + Invite 3 friends to a game trial each season
-                </p>
-                <p>
-                  + 1 Free entry to gaming conference
-                </p>
               </div>
             </div>
 
@@ -214,6 +192,46 @@
           </div>
         </div>
       </div>
+<!-- modal : price details - starter -->
+      <div class="modal fade price-tag-starter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="details">
+              <h3>Starter</h3>
+              <p>
+                + Choice of 3 FREE games each month
+              </p>
+              <p>
+                + Invite 2 friends to a game trial each season
+              </p>
+              <p>
+                + 2 Free entry to gaming conference
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- modal : price details - deluxe -->
+      <div class="modal fade price-tag-deluxe" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="details">
+              <h3>Deluxe</h3>
+              <p>
+                + Choice of 5 FREE games each month
+              </p>
+              <p>
+                + Invite 3 friends to a game trial each season
+              </p>
+              <p>
+                + 1 Free entry to gaming conference
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </section>
 
 <!--  contact -->
@@ -265,19 +283,7 @@
         $(this).collapse('hide');
       });
 
-      // hover on price tag
-      $('.price-square').on('mouseenter', function(e){
-        const current = $(this);
-        setTimeout(function(){
-          current.find('.details').addClass('show-details');
-        },300);
-      });
 
-      $('.price-square').on('mouseleave', function(e){
-        $(this).find('.details').removeClass('show-details');
-      });
-
-      
     });
 
     </script>
