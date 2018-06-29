@@ -268,7 +268,7 @@ section#promotions {
   text-align: center;
   position: relative;
   transition: 0.2s;
-
+  margin-bottom: 2px;
 }
 .price-square h2 {
   position: absolute;
@@ -278,51 +278,66 @@ section#promotions {
   text-transform: uppercase;
   font-size: 1.5em;
 }
-.price-square div {
+div.price {
   position: absolute;
   top: 30%;
 }
 
-.price-square div span {
+div.price span {
   position: absolute;
   top: 10px;
 }
 
-.price-square div .dollar-sign {
+div.price .dollar-sign {
   left: 20px;
   font-size: 30px;
 }
-.price-square div .dollar {
+div.price .dollar {
   left: 40px;
   font-size: 60px;
   font-weight: bold;
 }
-.price-square div .cents-one {
+div.price .cents-one {
   left: 80px;
   font-size: 30px;
   font-weight: bold;
 }
-.price-square div .cents-two {
+div.price .cents-two {
   left: 110px;
   font-size: 30px;
   font-weight: bold;
 }
 
-.price-square div .month {
+div.price .month {
   top: 60px;
   left: 120px;
   font-size: 20px;
   font-weight: bold;
 }
+div.details {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  display: none;
+}
+div.details p {
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
 .price-square:hover {
   z-index: 2;
-  transform: scale(1.2) rotate(5deg);
+  width: 600px;
   cursor: pointer;
-  background-color: RGBA(255, 215, 0, 1);
-  border: none;
   box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
-
+/* .price-square:hover div.details {
+  display: block;
+} */
+.show-details {
+  display: block !important;
+}
 /* contact */
 
 section#contact {

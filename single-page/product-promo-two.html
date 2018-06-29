@@ -169,20 +169,42 @@
           <div class="col-md-6 promo-left">
             <div class="price-square">
               <h2>starter</h2>
-              <div>
+              <div class="price">
                 <span class="dollar-sign">$</span>
                 <span class="dollar">7</span>
                 <span class="cents-one">95</span>
                 <span class="month">/mo.</span>
               </div>
+              <div class="details">
+                <p>
+                  + Choice of 3 FREE games each month
+                </p>
+                <p>
+                  + Invite 2 friends to a game trial each season
+                </p>
+                <p>
+                  + 2 Free entry to gaming conference
+                </p>
+              </div>
             </div>
             <div class="price-square">
               <h2>deluxe</h2>
-              <div>
+              <div class="price">
                 <span class="dollar-sign">$</span>
                 <span class="dollar">12</span>
                 <span class="cents-two">95</span>
                 <span class="month">/mo.</span>
+              </div>
+              <div class="details">
+                <p>
+                  + Choice of 5 FREE games each month
+                </p>
+                <p>
+                  + Invite 3 friends to a game trial each season
+                </p>
+                <p>
+                  + 1 Free entry to gaming conference
+                </p>
               </div>
             </div>
 
@@ -241,7 +263,21 @@
       // hide the nav menu
     $(document).on('click','.navbar-collapse', function(e){
         $(this).collapse('hide');
-      })
+      });
+
+      // hover on price tag
+      $('.price-square').on('mouseenter', function(e){
+        const current = $(this);
+        setTimeout(function(){
+          current.find('.details').addClass('show-details');
+        },300);
+      });
+
+      $('.price-square').on('mouseleave', function(e){
+        $(this).find('.details').removeClass('show-details');
+      });
+
+      
     });
 
     </script>
