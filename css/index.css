@@ -15,8 +15,50 @@ main {
   background-image: url('https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size:cover;
   background-repeat: no-repeat;
+  display: relative;
 }
-
+html,body {
+/*   position: relative; */
+  padding: 0;
+  margin: 0;
+}
+.gloria {
+  position: absolute;
+  top: -50px;
+  right: 10%;
+  width: 200px;
+  height: 50px;
+  font-family: arial;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align:center;
+  font-size: 1em;
+  line-height: 3em;
+  transition: 0.3s;
+  background-color: deeppink;
+  color:white;
+}
+.gloria:after {
+  position:absolute;
+  content: 'hi';
+  bottom: -40px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: deeppink;
+}
+.gloria:hover {
+  transform: translateY(50px);
+}
+.gloria a {
+  font-size: 1.4em;
+}
+.gloria a:first-of-type {
+  color: #0077B5;
+}
+.gloria a:last-of-type {
+  color: black;
+}
 header {
  text-align: center;
  padding-top: 1em;
@@ -68,29 +110,6 @@ h2.link-title {
 .link-container a:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-/* footer -------------*/
-
-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-right: 3em;
-  text-align: right;
-  font-family: arial;
-  text-transform: uppercase;
-}
-
-footer a {
-  color:#004d40;
-  margin-left: 5px;
-  font-size: 1.2em;
-}
-footer a:hover {
-  color: #c62828;
-}
-
 
 /* responsive ----------- */
 @media screen and (max-width: 600px) {
