@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -34,8 +36,12 @@ div.main {
   flex-direction: column;
   justify-content: center;
   text-align: justify;
+  padding-left: 50px;
 }
 
+#left h1 {
+  font-family: 'Comfortaa', sans-serif;
+}
 #left a.backlink {
   font-size: 0.9em;
   color:inherit;
