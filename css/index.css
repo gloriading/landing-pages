@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: sans-serif;
 }
 
 * > a {
@@ -19,58 +20,56 @@ main {
 header {
  text-align: center;
  padding-top: 1em;
- font-family: sans-serif;
  letter-spacing: 2px;
  text-shadow: 0 0 5px white;
 }
 
 header h1 {
-  margin-top: 0;
+  margin-top: 5%;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 5vw;
 }
+
+/* section -------------- */
 
 section {
    background-color: rgba(245,245,245,0.6);
-   width: 50%;
-   max-height: 400px;
+   width: 80vw;
+   height: 60vh;
    overflow: scroll;
    transform: translateX(-50%);
    margin-left: 50%;
-   padding: 1em 1em;
+   padding: 1em 2em;
    box-shadow: 0 0 5px gray inset;
    border-radius: 10px;
 }
-
-.coming-soon-links h2 , .single-page-links h2, .multi-page-links h2{
-  font-family: sans-serif;
-  text-shadow: 0 0 3px white;
-  margin: 10px 0 10px 0;
+.link-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+h2.link-title {
+  font-weight: 300;
+}
+.link-container a {
+  display: block;
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 300;
+  border: 1px solid;
+  margin: 2px;
+  letter-spacing: 1px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+.link-container a:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.coming-soon-links a , .single-page-links a, .multi-page-links a {
-  color:inherit;
-}
-
-.coming-soon-links p , .single-page-links p, .multi-page-links p {
-  font-size: 1.1em;
-  font-family: helvetica, arial;
-  transition: 1s ease;
-  border-radius: 10px;
-  padding: 0.2em 1em;
-  margin: 0;
-  margin-top: 5px;
-}
-
-.coming-soon-links p:hover {
-  background-color: RGB(255, 215, 0);
-}
-
-.single-page-links p:hover {
-  background-color: RGB(30, 144, 255);
-}
-
-.multi-page-links p:hover {
-  background-color: RGBA(205, 133, 63, 0.8);
-}
+/* footer -------------*/
 
 footer {
   position: absolute;
@@ -80,6 +79,7 @@ footer {
   padding-right: 3em;
   text-align: right;
   font-family: arial;
+  text-transform: uppercase;
 }
 
 footer a {
@@ -89,4 +89,12 @@ footer a {
 }
 footer a:hover {
   color: #c62828;
+}
+
+
+/* responsive ----------- */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
 }
