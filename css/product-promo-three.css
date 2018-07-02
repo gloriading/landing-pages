@@ -1,6 +1,5 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Playball');
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Playball');
 
 /* universal  */
 html, body {
@@ -57,7 +56,7 @@ nav button {
   color: rgba(0,0,0,1) !important;
 }
 .scrolled span {
-  color: rgb(255, 183, 77);
+  color: #695a46;
 }
 
 /* first page - header */
@@ -87,67 +86,65 @@ header .primaryMessage {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -10%);
 }
 
 header .primaryMessage h1 {
   font-family: 'Playball', sans-serif;
   font-size: 50px;
-  /* font-weight: 300; */
   letter-spacing: 2px;
   color: white;
   margin-bottom: 10vh;
 }
 
-header .primaryMessage a {
-  /* margin-top: 100px; */
-  color: white;
-  font-size: 40px !important;
-  z-index: 99;
-}
-
-header .primaryMessage a:hover {
-  transform: scale(2);
-  cursor: pointer !important;
-}
-
-
 /* about page */
 
-#about p {
-  font-family: Georgia;
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.6);
-}
 section#about {
-  padding-top: 150px;
-  background-color: RGB(255, 215, 0);
+  background-color: #695a46;
   min-height: 100vh;
 }
-
-#about p {
+#about .row {
+  min-height: 100vh;
+}
+.about-left .about-left-inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.about-left .section-heading {
+  font-family: 'Playball', sans-serif;
+  color: #dfcaae;
+}
+.about-left p
+ {
   font-size: 20px;
-  color: rgba(37, 37, 37, 0.9);
+  font-family: 'Lato', sans-serif;
+  color: #ede1d1;
+  letter-spacing: 0.5px;
   line-height: 2em;
 }
-
-#about a.btn-default {
-  margin-top: 30px;
-  color: black;
-  padding: 15px 55px !important;
-  letter-spacing: 1px;
-  font-size: 18px !important;
-  text-transform: uppercase;
-  border: 2px solid white;
+.about-right {
+  background-image: url("../images/coffee02.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
-#about a.btn-default:hover {
-  color: white;
-  background: #fc00ff;
-  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
-  background: linear-gradient(to right, #00dbde, #fc00ff);
-
+.store-hour {
+  display: inline-block;
+  margin: 40px;
+  padding: 30px;
+  background-color: rgba(237,225,209,0.4);
+  position: relative;
+}
+.store-hour p {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  color: #3E2723;
+  text-shadow: 1px 1px 2px rgba(237,225,209,0.6);
+  letter-spacing: 0.5px;
+  line-height: 2em;
 }
 
 
@@ -415,7 +412,9 @@ footer {
 }
 
 /* responsive settings */
+@media screen and (max-width: 768px) {
 
+}
 
 @media screen and (max-width: 600px) {
 /* header */
