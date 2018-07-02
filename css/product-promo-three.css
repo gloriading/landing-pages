@@ -14,7 +14,7 @@ a { text-decoration: none; }
 
 header hr,
 #about hr,
-#promotions hr {
+#menu hr {
   margin: 30px auto 0px;
   height: 3px;
   width: 50px;
@@ -47,7 +47,7 @@ nav button {
 }
 
 .scrolled {
-  border-bottom: 1px solid rgb(255, 183, 77) !important;
+  border-bottom: 1px solid #695a46 !important;
   background-color: white !important;
   color: rgba(0,0,0,0.7) !important;
   transition: 1s ease;
@@ -148,209 +148,70 @@ section#about {
 }
 
 
-/* features page */
 
-section#features {
-  min-height: 100vh;
-  padding-top: 150px;
-  background-color: white;
-  position: relative;
-  overflow: hidden;
-}
-#features .texture-features {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.texture-features .wave {
-  position: absolute;
-  top: 50%;
-  width: 2000px;
-  height: 2000px;
-  background: #fc00ff;
-  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
-  background: linear-gradient(to right, #00dbde, #fc00ff);
-  opacity: 0.3;
-  border-radius: 30%;
-}
-.wave.w-one{
-  animation: wave 20s linear -1s infinite;
-}
-.wave.w-two{
-  animation: wave 23s linear -1s infinite;
-}
-.wave.w-three{
-  animation: wave 25s linear -1s infinite;
-}
-@keyframes wave{
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
+/* menu */
 
-#features .section-heading {
-  text-align: center;
-}
-#features .features-content {
-  padding: 50px 100px 50px 100px;
-}
-#features img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  max-width:100%;
-  max-height:100%;
-}
-.feature-cell {
-  height: 100%;
-  text-align: center;
-}
-.feature-cell .icon {
-  font-size: 60px;
-  margin-bottom: 20px;
-  transition: 0.3s;
-}
-.cell-content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 30px;
-  font-family: 'Lato', sans-serif;
-}
-.cell-content h3 {
-  letter-spacing: 1px;
-}
-.cell-content p {
-  font-size: 16px;
-}
-.cell-content:hover .icon {
-  transform: scale(1.2);
-}
-
-/* price */
-
-section#promotions {
+section#menu {
   padding-top: 120px;
-  background-image: url('../images/gaming-bg.jpeg');
+  background-image: url('../images/coffee03.jpeg');
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
-.texture-promo {
+.texture-menu {
   position: absolute;
   width: 100%;
   height: 100%;
   transform: translateY(-120px);
-  background-color: rgba(0,0,0,0.1);
-  background: repeating-linear-gradient(to right, transparent, rgba(0,0,0,0.3));
+  background-color: rgba(0,0,0,0.2);
+  background: repeating-linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,0,0.4),rgba(0,0,0,0.2) );
 }
 
-#promotions .section-heading {
+#menu .section-heading {
   color: white;
+  font-family: 'Playball', sans-serif;
 }
 
-.price-square {
-  width: 200px;
-  height: 200px;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+.menu-content {
+  margin: 30px auto;
+  padding: 20px;
+  width: 80vw;
+  border: 1px solid white;
+  background-color: rgba(255,255,255,0.5);
   text-align: center;
-  position: relative;
-  transition: 0.2s;
-  margin-bottom: 5px;
-  background: linear-gradient(-45deg, gold 10%, gold 30%,
-  rgba(255,255,255,0.5) 30%);
-  color: black;
-  text-shadow: 1px 1px #FFFFE0;
 }
-.price-square:last-of-type {
-  margin-bottom: 30px;
-}
-.price-square h2 {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-transform: uppercase;
-  font-size: 1.5em;
-}
-div.price {
-  position: absolute;
-  top: 30%;
-}
-
-div.price span {
-  position: absolute;
-  top: 10px;
-}
-
-div.price .dollar-sign {
-  left: 20px;
+.menu-content li {
   font-size: 30px;
-}
-div.price .dollar {
-  left: 40px;
-  font-size: 60px;
-  font-weight: bold;
-}
-div.price .cents-one {
-  left: 80px;
-  font-size: 30px;
-  font-weight: bold;
-}
-div.price .cents-two {
-  left: 110px;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-div.price .month {
-  top: 60px;
-  left: 120px;
-  font-size: 20px;
-  font-weight: bold;
-}
-div.details {
-  padding: 40px;
-  background: linear-gradient(-45deg, white 10%, white 30%,
-  gold 30%);
-  color: black;
-
-}
-div.details h3 {
-  text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 15px;
 }
-div.details p {
-  margin: 0;
-  letter-spacing: 0.5px;
+span.price {
+  display: inline-block;
+  font-weight: bold;
+  transform: scale(0.8);
+  margin-left: 10px;
+  transition: 0.2s;
 }
-.price-square:hover {
-  z-index: 2;
-  cursor: pointer;
-  transform: translateX(10px);
-}
-.modal-content {
-  margin-top: 30%;
-  /* transform: translateY(-50%); */
+span.price:hover {
+  transform: scale(1);
 }
 
 /* contact */
 
 section#contact {
   padding-top: 150px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #contact hr {
   margin: 30px auto 0px;
   height: 3px;
   width: 50px;
-  background-color: RGB(255, 215, 0);
+  background-color: #695a46;
 }
 
 #contact p {
@@ -378,21 +239,24 @@ section#contact {
   box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   margin-left: 10px;
   transition: 0.2s;
+  background-color: #695a46;
 }
 .sm-icon:first-of-type {
-  background-color: #55acee;
   margin-left: 0px;
 }
-.sm-icon:nth-of-type(2) {
+.sm-icon:first-of-type:hover {
+  background-color: #55acee;
+}
+.sm-icon:nth-of-type(2):hover {
   background-color: #dd4b39;
 }
-.sm-icon:nth-of-type(3) {
+.sm-icon:nth-of-type(3):hover {
   background-color: #0077B5;
 }
-.sm-icon:nth-of-type(4) {
+.sm-icon:nth-of-type(4):hover {
   background-color: #e91e63;
 }
-.sm-icon:last-of-type {
+.sm-icon:last-of-type:hover {
   background-color: #388e3c;
 }
 .sm-icon:hover {
@@ -412,11 +276,9 @@ footer {
 }
 
 /* responsive settings */
-@media screen and (max-width: 768px) {
 
-}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 /* header */
   header .primaryMessage {
     padding: 5px 90px;
@@ -435,7 +297,10 @@ footer {
   line-height: 1.5em;
   padding: 0 20px;
 }
-
+/*  menu */
+  .morning-special li {
+    font-size: 20px;
+  }
 /* about */
 /* contact */
   #about .container {
