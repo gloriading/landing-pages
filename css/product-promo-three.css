@@ -248,12 +248,9 @@ section#contact {
   background-color: #55acee;
 }
 .sm-icon:nth-of-type(2):hover {
-  background-color: #dd4b39;
-}
-.sm-icon:nth-of-type(3):hover {
   background-color: #0077B5;
 }
-.sm-icon:nth-of-type(4):hover {
+.sm-icon:nth-of-type(3):hover {
   background-color: #e91e63;
 }
 .sm-icon:last-of-type:hover {
