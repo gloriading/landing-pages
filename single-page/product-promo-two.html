@@ -2,8 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> Product Promotion Part II</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Product Promotion Example Webpage">
+    <meta name="keywords" content="web design, responsive web design">
+    <meta name="author" content="Gloria Ding">
+
+    <title> G Games </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/product-promo-two.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -38,7 +42,8 @@
      </nav>
 <!-- first page  -->
      <header class="text-center">
-         <div class="texture-header"></div>
+       <div class="texture-header"></div>
+       <div class="container-fluid">
          <div class="row">
            <div class="col-md-7 primaryMessage">
              <h1>
@@ -49,10 +54,12 @@
              </a>
            </div>
            <!-- hide the image if the screen is small-->
-           <div class="col-md-5 d-sm-none d-md-block img-box">
+           <div class="col-md-5 img-box">
              <img src="../images/monster.png" alt="Monster">
            </div>
          </div>
+
+       </div>
      </header>
 
 
@@ -151,81 +158,35 @@
 
 <!--  promotions -->
     <section id="promotions">
-      <div class="texture-promo"></div>
       <div class="container">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading">
-            Our best deals for YOU!
-          </h2>
-          <hr class="my-4">
-        </div>
-        <div class="row">
-          <div class="col-md-6 promo-left">
-            <div class="price-square" data-toggle="modal" data-target=".price-tag-starter">
-              <h2>starter</h2>
-              <div class="price">
-                <span class="dollar-sign">$</span>
-                <span class="dollar">7</span>
-                <span class="cents-one">95</span>
-                <span class="month">/mo.</span>
-              </div>
-            </div>
-            <div class="price-square" data-toggle="modal" data-target=".price-tag-deluxe">
-              <h2>deluxe</h2>
-              <div class="price">
-                <span class="dollar-sign">$</span>
-                <span class="dollar">12</span>
-                <span class="cents-two">95</span>
-                <span class="month">/mo.</span>
-              </div>
-            </div>
+        <h2 class="section-heading">
+          Our best deals for you!
+        </h2>
 
-          </div>
-          <div class="col-md-6 promo-right">
+        <hr class="my-4">
 
-          </div>
-        </div>
-      </div>
-<!-- modal : price details - starter -->
-      <div class="modal fade price-tag-starter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
+        <div class="deals">
+          <div class="deal-box">
+            <h2>starter</h2>
+            <p>$<span class="figure">7.95</span>/month</p>
             <div class="details">
-              <h3>Starter</h3>
-              <p>
-                + Choice of 3 FREE games each month
-              </p>
-              <p>
-                + Invite 2 friends to a game trial each season
-              </p>
-              <p>
-                + 2 Free entry to gaming conference
-              </p>
+              <p>+ Choice of 3 FREE games each month</p>
+              <p>+ Invite 2 friends to a game trial each season</p>
+              <p>+ 2 Free entry to gaming conference</p>
             </div>
           </div>
-        </div>
-      </div>
-<!-- modal : price details - deluxe -->
-      <div class="modal fade price-tag-deluxe" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
+
+          <div class="deal-box">
+            <h2>deluxe</h2>
+            <p>$<span class="figure">12.95</span>/month</p>
             <div class="details">
-              <h3>Deluxe</h3>
-              <p>
-                + Choice of 5 FREE games each month
-              </p>
-              <p>
-                + Invite 3 friends to a game trial each season
-              </p>
-              <p>
-                + 1 Free entry to gaming conference
-              </p>
+              <p>+ Choice of 5 FREE games each month</p>
+              <p>+ Invite 3 friends to a game trial each season</p>
+              <p>+ 1 Free entry to gaming conference</p>
             </div>
           </div>
         </div>
       </div>
-
-
     </section>
 
 <!--  contact -->
@@ -251,7 +212,7 @@
     </section>
     <footer>
       <p>
-        G Games 2018. 
+        G Games 2018.
       </p>
     </footer>
 

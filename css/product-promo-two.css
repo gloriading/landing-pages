@@ -8,8 +8,12 @@ html, body {
   height: 100%;
   width: 100%;
 }
-
-* { box-sizing: border-box; }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 a { text-decoration: none; }
 
 header hr,
@@ -26,14 +30,14 @@ header hr,
   font-weight: 300;
   color: rgba(37, 37, 37, 1);
   letter-spacing: 1px;
+  text-align: center;
 }
 
 /* nav */
-nav {
+
+nav#mainNav {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
-}
-nav#mainNav {
   background-color: transparent;
   color: rgba(255,255,255,0.7);
 }
@@ -92,7 +96,7 @@ header .primaryMessage h1 {
 header a.btn-default {
   margin-top: 60px;
   color: white;
-  padding: 15px 55px !important;
+  /* padding: 15px 55px !important; */
   letter-spacing: 1px;
   font-size: 18px !important;
   text-transform: uppercase;
@@ -139,7 +143,7 @@ section#about {
 #about a.btn-default {
   margin-top: 30px;
   color: black;
-  padding: 15px 55px !important;
+  /* padding: 15px 55px !important; */
   letter-spacing: 1px;
   font-size: 18px !important;
   text-transform: uppercase;
@@ -198,9 +202,6 @@ section#features {
   }
 }
 
-#features .section-heading {
-  text-align: center;
-}
 #features .features-content {
   padding: 50px 100px 50px 100px;
 }
@@ -248,102 +249,39 @@ section#promotions {
   position: relative;
   overflow: hidden;
 }
-.texture-promo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: translateY(-120px);
-  background-color: rgba(0,0,0,0.1);
-  background: repeating-linear-gradient(to right, transparent, rgba(0,0,0,0.3));
-}
 
-#promotions .section-heading {
-  color: white;
-}
-
-.price-square {
-  width: 200px;
-  height: 200px;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+.deal-box {
+  display: inline-block;
+  width: 40%;
+  border: 1px solid white;
+  background-color: rgba(255,255,255,0.3);
   text-align: center;
-  position: relative;
-  transition: 0.2s;
-  margin-bottom: 5px;
-  background: linear-gradient(-45deg, gold 10%, gold 30%,
-  rgba(255,255,255,0.5) 30%);
-  color: black;
-  text-shadow: 1px 1px #FFFFE0;
-}
-.price-square:last-of-type {
-  margin-bottom: 30px;
-}
-.price-square h2 {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-transform: uppercase;
-  font-size: 1.5em;
-}
-div.price {
-  position: absolute;
-  top: 30%;
-}
-
-div.price span {
-  position: absolute;
-  top: 10px;
-}
-
-div.price .dollar-sign {
-  left: 20px;
-  font-size: 30px;
-}
-div.price .dollar {
-  left: 40px;
-  font-size: 60px;
-  font-weight: bold;
-}
-div.price .cents-one {
-  left: 80px;
-  font-size: 30px;
-  font-weight: bold;
-}
-div.price .cents-two {
-  left: 110px;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-div.price .month {
-  top: 60px;
-  left: 120px;
-  font-size: 20px;
-  font-weight: bold;
-}
-div.details {
-  padding: 40px;
-  background: linear-gradient(-45deg, white 10%, white 30%,
-  gold 30%);
-  color: black;
-
-}
-div.details h3 {
-  text-transform: uppercase;
+  margin-left: 5%;
   letter-spacing: 1px;
+  transition: 0.3s;
 }
-div.details p {
-  margin: 0;
-  letter-spacing: 0.5px;
+.deal-box:hover {
+  transform: translateY(-5px);
 }
-.price-square:hover {
-  z-index: 2;
-  cursor: pointer;
-  transform: translateX(10px);
+.deal-box h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #673ab7;
 }
-.modal-content {
-  margin-top: 30%;
-  /* transform: translateY(-50%); */
+.deal-box p {
+  font-size: 20px;
+}
+.deal-box .figure {
+  font-size: 40px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.details {
+  text-align: justify;
+  padding: 20px;
+}
+.details p {
+  font-size: 16px;
 }
 
 /* contact */
@@ -421,15 +359,16 @@ footer {
 /* responsive settings */
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 /* header */
   header .primaryMessage {
-    padding: 5px 90px;
+    padding: 5px 50px;
   }
   header .primaryMessage h1 {
     font-size: 35px;
     line-height: 1.5em;
   }
+
   div.img-box {
     display: none;
   }
@@ -438,13 +377,12 @@ footer {
 .section-heading {
   font-size: 35px;
   line-height: 1.5em;
-  padding: 0 20px;
 }
 
 /* about */
 /* contact */
   #about .container {
-    padding: 20px;
+    padding: 10px 20px;
   }
   #about p,
   #contact p {
@@ -453,10 +391,34 @@ footer {
     text-align: justify;
   }
   .sm-icon {
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
     margin-left: 5px;
   }
+
+/* feature */
+  .cell-content {
+    /* position: relative;
+    top: 50%;
+    transform: translateY(-50%); */
+    padding: 10px;
+  }
+
+  #features .features-content {
+    padding: 20px;
+    text-align: center;
+  }
+  #features .feature-box {
+    width: 100%;
+  }
+
+/* promotions   */
+  .deal-box {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
 
 }
