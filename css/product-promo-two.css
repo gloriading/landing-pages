@@ -14,15 +14,19 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-a { text-decoration: none; }
+a { text-decoration: none !important; }
 
-header hr,
 #about hr,
 #promotions hr {
   margin: 30px auto 0px;
   height: 3px;
   width: 50px;
   background-color: white;
+}
+
+.section-frame {
+  padding-top: 150px;
+  min-height: 100vh;
 }
 
 .section-heading {
@@ -66,11 +70,9 @@ nav button {
 /* first page - header */
 
 header {
-  padding-top: 150px;
   background: #fc00ff;
   background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
   background: linear-gradient(to right, #00dbde, #fc00ff);
-  min-height: 100vh;
   position: relative;
 }
 header .texture-header {
@@ -96,7 +98,6 @@ header .primaryMessage h1 {
 header a.btn-default {
   margin-top: 60px;
   color: white;
-  /* padding: 15px 55px !important; */
   letter-spacing: 1px;
   font-size: 18px !important;
   text-transform: uppercase;
@@ -122,19 +123,13 @@ header img {
 
 /* about page */
 
-#about p {
-  font-family: Georgia;
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.6);
-}
 section#about {
-  padding-top: 150px;
   background-color: RGB(255, 215, 0);
-  min-height: 100vh;
 }
 
 #about p {
+  font-family: Georgia;
+  letter-spacing: 1px;
   font-size: 20px;
   color: rgba(37, 37, 37, 0.9);
   line-height: 2em;
@@ -142,8 +137,8 @@ section#about {
 
 #about a.btn-default {
   margin-top: 30px;
+  margin-bottom: 40px;
   color: black;
-  /* padding: 15px 55px !important; */
   letter-spacing: 1px;
   font-size: 18px !important;
   text-transform: uppercase;
@@ -155,15 +150,11 @@ section#about {
   background: #fc00ff;
   background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
   background: linear-gradient(to right, #00dbde, #fc00ff);
-
 }
-
 
 /* features page */
 
 section#features {
-  min-height: 100vh;
-  padding-top: 150px;
   background-color: white;
   position: relative;
   overflow: hidden;
@@ -241,11 +232,9 @@ section#features {
 /* price */
 
 section#promotions {
-  padding-top: 120px;
   background-image: url('../images/gaming-bg.jpeg');
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -285,11 +274,6 @@ section#promotions {
 }
 
 /* contact */
-
-section#contact {
-  padding-top: 150px;
-  height: 100vh;
-}
 
 #contact hr {
   margin: 30px auto 0px;
@@ -356,15 +340,31 @@ footer {
   text-align: center;
 }
 
+footer a:hover {
+  color: gold;
+}
 /* responsive settings */
 
 
 @media screen and (max-width: 768px) {
+/* global */
+  .section-frame {
+    padding-top: 80px;
+    min-height: 100vh;
+  }
+  .section-heading {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 30px;
+    line-height: 1.5em;
+  }
+
 /* header */
   header .primaryMessage {
     padding: 5px 50px;
   }
   header .primaryMessage h1 {
+    margin-top: 50px;
     font-size: 35px;
     line-height: 1.5em;
   }
@@ -372,13 +372,6 @@ footer {
   div.img-box {
     display: none;
   }
-
-/* section-heading */
-.section-heading {
-  font-size: 35px;
-  line-height: 1.5em;
-}
-
 /* about */
 /* contact */
   #about .container {
@@ -399,9 +392,6 @@ footer {
 
 /* feature */
   .cell-content {
-    /* position: relative;
-    top: 50%;
-    transform: translateY(-50%); */
     padding: 10px;
   }
 
