@@ -25,7 +25,7 @@ html,body {
 .gloria {
   position: absolute;
   top: -50px;
-  right: 10%;
+  right: 5%;
   width: 200px;
   height: 50px;
   font-family: arial;
@@ -42,7 +42,7 @@ html,body {
   position:absolute;
   content: 'hi';
   bottom: -40px;
-  left: 0;
+  right: 0;
   width: 40px;
   height: 40px;
   background-color: deeppink;
@@ -71,7 +71,7 @@ header h1 {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 200;
-  font-size: 5vw;
+  font-size: 40px;
 }
 
 /* section -------------- */
@@ -84,8 +84,7 @@ section {
    transform: translateX(-50%);
    margin-left: 50%;
    padding: 1em 2em;
-   box-shadow: 0 0 5px gray inset;
-   border-radius: 10px;
+   border-radius: 5px;
 }
 .link-container {
   display: flex;
@@ -94,6 +93,7 @@ section {
 }
 h2.link-title {
   font-weight: 300;
+  font-size: 30px
 }
 .link-container a {
   display: block;
@@ -111,9 +111,13 @@ h2.link-title {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* responsive ----------- */
-@media screen and (max-width: 600px) {
+/* Media Queries */
+
+@media(max-width: 768px){
   header h1 {
-    font-size: 20px;
+    font-size: 30px;
+  }
+  h2.link-title {
+    font-size: 22px
   }
 }
