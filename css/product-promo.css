@@ -1,3 +1,7 @@
+
+
+/* global */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -7,6 +11,39 @@ html, body {
 
 * { box-sizing: border-box; }
 a { text-decoration: none; }
+
+hr {
+  margin: 30px auto 0px;
+  height: 3px !important;
+  width: 50px;
+  background-color: white;
+}
+
+.section-frame {
+  padding-top: 150px;
+  min-height: 100vh;
+}
+
+.section-heading {
+  font-size: 35px;
+  color: rgba(37, 37, 37, 1);
+  letter-spacing: 1px;
+}
+
+.btn-default {
+  margin-top: 30px;
+  padding: 10px 30px !important;
+  letter-spacing: 1px;
+  font-size: 14px !important;
+  text-transform: uppercase;
+}
+
+.p-content {
+  font-family: Georgia;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+/* nav */
 
 nav .navbar-brand {
   text-transform: uppercase;
@@ -35,56 +72,32 @@ nav button {
   color: rgb(255, 183, 77);
 }
 
+/* header */
+
 header {
-  padding-top: 150px;
   background-image: url('https://images.pexels.com/photos/248747/pexels-photo-248747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
 }
 
-header hr, #about hr, #promotions hr {
-  margin: 30px auto 0px;
-  height: 3px;
-  width: 50px;
-  background-color: white;
-}
-
-.primaryMessage {
+.header-message {
   padding: 5px 180px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-.primaryMessage h1 {
+.header-message h1 {
   font-size: 45px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: white;
 }
 
-@media screen and (max-width: 650px) {
-  .primaryMessage { padding: 5px 90px; }
-  .primaryMessage h1 { font-size: 30px; }
-}
-
-.secondaryMessage {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.secondaryMessage p, #about p {
-  font-family: Georgia;
-  font-size: 20px;
-  letter-spacing: 1px;
+.header-message .p-content {
   color: rgba(255, 255, 255, 0.6);
 }
 
 header a.btn-default {
-  margin-top: 30px;
   color: white;
-  padding: 10px 30px !important;
-  letter-spacing: 1px;
-  font-size: 14px !important;
-  text-transform: uppercase;
   background-color: rgba(255, 215, 0, 0.8);
 }
 
@@ -93,29 +106,18 @@ header a.btn-default:hover {
   background-color: rgba(255, 215, 0, 1);
 }
 
+/* about */
+
 section#about {
-  padding-top: 150px;
   background-color: RGB(255, 215, 0);
-  min-height: 100vh;
 }
 
-#about .section-heading, #contact .section-heading {
-  font-size: 35px;
-  color: rgba(37, 37, 37, 1);
-  letter-spacing: 1px;
-}
-
-#about p {
+#about .p-content {
   color: rgba(37, 37, 37, 0.9);
 }
 
 #about a.btn-default {
-  margin-top: 30px;
   color: rgba(37, 37, 37, 1);
-  padding: 10px 30px !important;
-  letter-spacing: 1px;
-  font-size: 14px !important;
-  text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -124,20 +126,18 @@ section#about {
   background-color: white;
 }
 
+/* product */
+
 section#products {
-  min-height: 100vh;
   background-color: rgb(37, 37, 37);
 }
 
 #products .products-content {
-  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-@media screen and (max-width: 650px) {
-  #products .products-content {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+#products .section-heading {
+  color: white;
 }
 
 .product-box-caption-content {
@@ -169,37 +169,32 @@ section#products {
   position: relative;
 }
 
-.inner-box:hover { cursor: pointer; }
-.inner-box:hover .product-box-caption-content { transform: scale(1); }
-
-section#promotions {
-  padding-top: 120px;
-  background-color: RGB(255, 215, 0);
-  min-height: 100vh;
+.inner-box:hover {
+  cursor: pointer;
+}
+.inner-box:hover .product-box-caption-content {
+  transform: scale(1);
 }
 
-#promotions .section-heading {
-  font-size: 35px;
-  color: rgba(37, 37, 37, 1);
-  letter-spacing: 1px;
+/* promotion */
+section#promotions {
+  background-color: RGB(255, 215, 0);
+}
+
+#promotions .container {
+  padding-bottom: 100px;
 }
 
 #promotions .card {
   padding: 0;
   border: 0;
+  margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 650px) {
-  #promotions .row {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
 #promotions .card:hover {
-  box-shadow: 1px 1px 10px black;
-  transform: scale(1.1);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+  transform: scale(1.05);
 }
 
 #promotions .card-header {
@@ -209,6 +204,7 @@ section#promotions {
 
 #promotions .card-header h4 {
   font-size: 20px;
+  letter-spacing: 1px;
 }
 
 #promotions .card-items p:first-of-type {
@@ -220,21 +216,15 @@ section#promotions {
   font-weight: 500;
 }
 
-section#contact {
-  padding-top: 150px;
-  height: 100vh;
-}
+/* contact */
 
 #contact hr {
-  margin: 30px auto 0px;
-  height: 3px;
-  width: 50px;
   background-color: RGB(255, 215, 0);
 }
 
 #contact p {
   font-family: Georgia;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
@@ -245,4 +235,35 @@ section#contact {
 .contact-info:hover .mail-icon{
   transition: transform 1s ease;
   transform: rotate(30deg) scale(0.5);
+}
+
+/* responsive settings */
+
+
+
+@media screen and (max-width: 650px) {
+  #products .products-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* global */
+  .section-frame {
+    padding-top: 100px;
+  }
+  .section-heading {
+    font-size: 26px;
+  }
+  /* header */
+  .header-message { padding: 5px 30px; }
+  .header-message h1 { font-size: 26px; }
+
+  /* promotions */
+  #promotions .row {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
 }
