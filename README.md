@@ -1,5 +1,6 @@
 # ✸ Landing Pages
-## ▷ Created with HTML, CSS, and JavaScript
+## ▷ Created with HTML, CSS, JavaScript, jQuery, Bootstrap
+
 
 #### ❊ [Product-promotion page (games)](https://gloriading.github.io/landing-pages/single-page/product-promo-two.html)
 
