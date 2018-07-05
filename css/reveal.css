@@ -32,7 +32,7 @@ a.backlink:hover {
 main {
   height: 100%;
   width: 100%;
-  background-image: url('https://images.pexels.com/photos/573294/pexels-photo-573294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background: url('https://images.pexels.com/photos/573294/pexels-photo-573294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size:cover;
   background-repeat: no-repeat;
   display: flex;
@@ -72,4 +72,19 @@ main {
   color: yellow;
   /* Ensure elements load hidden before ScrollReveal runs */
   visibility: hidden;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px){
+  main {
+    background: url('https://images.pexels.com/photos/573294/pexels-photo-573294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat -100px 0;
+    background-size:cover;
+  }
+  .box {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+
 }
