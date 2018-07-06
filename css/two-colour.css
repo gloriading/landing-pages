@@ -12,8 +12,9 @@ html, body {
 
 div.mainContainer {
   background-image: url('https://images.pexels.com/photos/917732/pexels-photo-917732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-size: 100vw auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 div.main {
@@ -98,3 +99,19 @@ button.twi:hover { transform: rotate(-60deg); }
 
 button.goo { color: #d32f2f; }
 button.goo:hover { transform:rotate(60deg);}
+
+
+/* Media Queries */
+
+@media(max-width: 768px){
+  div.main {
+    flex-direction: column;
+  }
+  #left {
+    width: 100%;
+  }
+  #socialMedia {
+    flex-direction: row;
+  }
+
+}
