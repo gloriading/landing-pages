@@ -49,13 +49,6 @@ nav button {
   background-color: rgba(255,255,255,0.2);
 }
 
-@media screen and (max-width: 550px) {
-  .navbar-brand {
-    margin-left: 10%;
-    transform: scale(1);
-  }
-}
-
 header {
   padding: 100px 20px 30px 20px;
   height: 90vh;
@@ -64,8 +57,8 @@ header {
 
 .primaryMessage {
   text-shadow: -1px -1px 5px white;
+  font-size: 30px;
 }
-
 .primaryMessage hr {
   margin: 20px auto 0px;
   height: 3px;
@@ -90,4 +83,16 @@ a.about-btn {
 a.about-btn:hover {
   background-color: white;
   color: #12394f;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px){
+  .navbar-brand {
+    margin-left: 10%;
+    transform: scale(1);
+  }
+  .primaryMessage {
+    font-size: 20px;
+  }
 }
