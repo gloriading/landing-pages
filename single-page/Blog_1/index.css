@@ -55,9 +55,7 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 700px) {
-    main { flex-direction: column; }
-}
+
 section {
   flex: 70%;
   padding: 25px;
@@ -169,4 +167,17 @@ footer p {
   font-size: 0.8em;
   padding-right: 30px;
   color:rgba(9, 132, 227,1.0);
+}
+
+
+/* Media Queries */
+
+@media(max-width: 768px){
+    main { flex-direction: column; }
+    header {
+      padding: 80px 50px;
+    }
+    header h1 {
+      font-size: 30px;
+    }
 }
