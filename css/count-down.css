@@ -1,5 +1,5 @@
-body, html {
-  height: 100%;
+html, body {
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -10,9 +10,9 @@ body, html {
 
 .main {
   color: white;
-  height: 100%;
+  height: 100vh;
   background-image: url('https://images.pexels.com/photos/687811/pexels-photo-687811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-size: 100vw 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -53,7 +53,6 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 400px;
   text-align: center;
   transform: translate(-50%, -50%);
 }
@@ -66,20 +65,20 @@ section hr {
 }
 
 section h1 {
-  font-size: 2em;
+  font-size: 40px;
   font-family: arial;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 section p {
-  font-size: 1.2em;
+  font-size: 18px;
   letter-spacing: 2px;
   font-family: Courier;
 }
 
 .numbers {
-  font-size: 1.5em;
+  font-size: 40px;
 }
 
 footer {
@@ -88,4 +87,15 @@ footer {
   left: 2em;
   font-family: Georgia;
   letter-spacing: 1px;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px){
+  section h1 {
+    font-size: 30px;
+  }
+  .numbers {
+    font-size: 20px;
+  }
 }
