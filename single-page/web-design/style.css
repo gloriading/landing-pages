@@ -1,0 +1,300 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Rajdhani|Ubuntu');
+
+/* global */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html, body {
+  background-color: #FFE8DC;
+  color: #341809;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.2rem;
+}
+p {
+  font-size: 1.2rem;
+  text-indent: 1rem;
+  text-align: justify;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  font-family: 'Rajdhani', 'Lato', sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 5%;
+  width: 100%;
+}
+
+/* header */
+header {
+  background-color: #FE9F6D;
+  width: 100%;
+  height: 86px;
+  top: 0;
+}
+#logo {
+  margin: 30px 20px 20px 20px;
+  float: left;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+nav {
+  float: right;
+  padding: 25px 20px 0 0;
+}
+/* for mobile */
+#menu-icon {
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url(images/nav.png) center;
+}
+a:hover#menu-icon {
+  /* color: #ff793f; */
+}
+/* ------------------------- */
+ul {
+  list-style-type: none;
+}
+nav ul li {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+a.nav-link {
+  color: whitesmoke;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+a.nav-link:hover {
+  color: #341809;
+}
+.current {
+  color: #341809 !important;
+}
+
+/* banner */
+#banner {
+  width: 100%;
+  background-color: #FE9F6D;
+}
+#banner .container {
+  padding: 5% 10%;
+}
+
+/* about */
+
+.about {
+  width: calc(100%/3);
+  float: left;
+  padding: 5% 3%;
+  text-align: center;
+  color: navy;
+}
+#about {
+  background-color: #236AB9;
+}
+.about-title {
+  color: #FFE8DC;
+}
+.about i {
+  font-size: 2.5rem;
+}
+.about.past {
+  background-color: #94bceb;
+}
+.about.present {
+  background-color: #D4E4F7;
+}
+.about.future {
+  background-color: #94bceb;
+}
+
+/* theme */
+.theme-title {
+  clear:both;
+  color:#FFE8DC;
+  background-color: #ff793f;
+}
+.theme-container {
+  width: 100%;
+  float: left;
+  background-color: #FE9F6D;
+}
+.theme-container:nth-of-type(3) {
+  background-color: #FFE8DC;
+}
+.half-to-left {
+  width: 50%;
+  float:left;
+}
+.half-to-right {
+  width: 50%;
+  float: right;
+}
+.theme-content {
+  padding: 4% 3%;
+}
+
+/* team */
+#team {
+  background-color: #236AB9;
+  color: navy;
+}
+.team-title {
+  clear:both;
+  color:#FFE8DC;
+}
+.team-container {
+  width: 100%;
+  float: left;
+}
+.member {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.member h3,
+.member h5 {
+  margin: 10px 0;
+  font-family: 'Rajdhani', 'Lato', sans-serif;
+}
+.member h3 {
+  /* font-family: 'Rajdhani', sans-serif; */
+}
+#team img {
+ filter:sepia(40%);
+}
+#team img:hover {
+ filter:sepia(5%);
+}
+
+/* contact */
+#contact {
+  clear: both;
+  background-color: #FE9F6D;
+  text-align: center;
+}
+#contact i {
+  font-size: 3rem;
+  padding: 5%;
+}
+#contact a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+#contact a:hover {
+  color: #FC600A;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid #40407a;
+  background-color: #341809;
+  color: #FFE8DC;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+
+/* media queries */
+@media screen and (max-width: 768px){
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  p {
+    line-height: 1.5;
+  }
+
+  /* header { position: absolute; } */
+  #menu-icon {
+    display: inline-block;
+  }
+  nav ul, nav:active ul{
+    display: none;
+    z-index: 99;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    border: 1px solid white;
+    border-radius: 2px 0 2px 2px;
+    padding: 10px;
+    width: 50%;
+    background: #FE9F6D;
+  }
+  nav:hover ul {
+    display: block;
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #banner {
+    padding-top: 86px;
+  }
+
+  .about {
+    width: 100%;
+  }
+  .about i {
+    font-size: 1.5rem;
+  }
+  .half-to-left,
+  .half-to-right {
+    width: 100%;
+  }
+  .member {
+    width: 100%;
+  }
+  #contact i {
+    font-size: 1.5rem;
+  }
+
+
+}
